@@ -1,12 +1,10 @@
-package Tree;
+package DataStrucureTopicWise.Tree;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.TreeMap;
-
-import Tree.subtree.TreeNode;
 
 //https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/
 public class verticalOrderTraversalModified {
@@ -51,7 +49,7 @@ public class verticalOrderTraversalModified {
     private void vtUtil(TreeNode root, int x, int y, TreeMap<Integer, TreeMap<Integer, PriorityQueue<Integer>>> map) {
         if (root == null) 
 			return;
-
+        
 		TreeMap<Integer, PriorityQueue<Integer>> m = new TreeMap<>();
         PriorityQueue<Integer> pq = new PriorityQueue();
         if (map.containsKey(x)) {

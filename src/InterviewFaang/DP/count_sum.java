@@ -1,4 +1,4 @@
-package DP;
+package InterviewFaang.DP;
 //https://www.geeksforgeeks.org/count-of-n-digit-numbers-whose-sum-of-digits-equals-to-given-sum/
 
 import java.util.ArrayList;

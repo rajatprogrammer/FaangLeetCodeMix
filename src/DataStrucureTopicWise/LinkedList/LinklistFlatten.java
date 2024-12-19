@@ -5,6 +5,7 @@ import DataStrucureTopicWise.LinkedList.Doubel_linked.ListNode;
 //https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/
 public class LinklistFlatten {
 	
+	ListNode prev = null;
 	public class ListNode {
 	      int val;
 	      ListNode next;

@@ -1,4 +1,4 @@
-package String;
+package DataStrucureTopicWise.String;
 //https://leetcode.com/problems/valid-number/
 public class ValidNumber {
 

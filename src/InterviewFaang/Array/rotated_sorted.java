@@ -1,4 +1,4 @@
-package Array;
+package InterviewFaang.Array;
 //https://leetcode.com/problems/search-in-rotated-sorted-array/
 public class rotated_sorted {
 

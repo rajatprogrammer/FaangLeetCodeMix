@@ -1,4 +1,4 @@
-package LinkedList;
+package InterviewFaang.LinkedList;
 //
 public class middle_element {
 

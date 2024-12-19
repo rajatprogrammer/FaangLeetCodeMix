@@ -28,7 +28,7 @@ public class firstPostitive {
 	//extra space creation for hashSet
 	public static int firstMissingPositiveExtraSpace(int[] nums) {
 		  int min = Integer.MAX_VALUE;
-	        Set<Integer> set = new HashSet<>();
+	      Set<Integer> set = new HashSet<>();
 	        for (int i : nums) {
 	            min = Math.min(min, i);
 	            set.add(i);

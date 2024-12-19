@@ -6,7 +6,7 @@ In array A m elements were holes in which you have to keep elements of array B.
 and make the array A sorted. Twist was u can't use extra space and you should do it in linear time for i tried my best to figure it out then got to the point
  */
 //https://leetcode.com/discuss/compensation/960800/adobe-mts-1-on-campus/783162
-package Array;
+package InterviewFaang.Array;
 
 import java.util.Arrays;
 

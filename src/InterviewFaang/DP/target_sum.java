@@ -1,4 +1,4 @@
-package DP;
+package InterviewFaang.DP;
 //https://leetcode.com/problems/target-sum/
 //https://leetcode.com/problems/expression-add-operators/
 public class target_sum {

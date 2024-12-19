@@ -1,4 +1,4 @@
-package DP;
+package InterviewFaang.DP;
 
 //https://www.geeksforgeeks.org/count-the-number-of-ways-to-divide-n-in-k-groups-incrementally/
 //Expedia

@@ -1,4 +1,4 @@
-package Trie;
+package InterviewFaang.Trie;
 
 import java.util.LinkedList;
 import java.util.List;

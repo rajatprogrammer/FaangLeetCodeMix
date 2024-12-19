@@ -1,4 +1,4 @@
-package Tree;
+package DataStrucureTopicWise.Tree;
 // https://leetcode.com/problems/numbers-with-same-consecutive-differences/
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package BFS;
+package DataStrucureTopicWise.BFS;
 //https://leetcode.com/problems/shortest-path-in-binary-matrix/
 import java.util.LinkedList;
 import java.util.Queue;

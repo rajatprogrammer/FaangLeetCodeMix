@@ -1,4 +1,4 @@
-package SegmentTree;
+package InterviewFaang.SegmentTree;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package DFS;
+package InterviewFaang.DFS;
 /*//amazon
  * https://www.geeksforgeeks.org/minimum-moves-required-to-come-out-of-a-grid-safely/
  * */

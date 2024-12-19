@@ -1,4 +1,4 @@
-package tree;
+package InterviewFaang.tree;
 //https://leetcode.com/problems/house-robber-iii/
 public class House_robber {
 	static class TreeNode {

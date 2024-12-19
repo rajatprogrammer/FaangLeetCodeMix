@@ -1,4 +1,4 @@
-package Array;
+package InterviewFaang.Array;
 //https://leetcode.com/problems/find-the-duplicate-number/solution/
 public class DuplicateNumber {
 

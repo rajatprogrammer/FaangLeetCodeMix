@@ -1,4 +1,4 @@
-package heap;
+package InterviewFaang.heap;
 //https://www.geeksforgeeks.org/heap-sort/
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package Tree;
+package DataStrucureTopicWise.Tree;
 //https://www.geeksforgeeks.org/closest-leaf-to-a-given-node-in-binary-tree/
 public class closest_leaf {
 	static class Node  

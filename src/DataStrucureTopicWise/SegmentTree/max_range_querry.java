@@ -1,4 +1,4 @@
-package SegmentTree;
+package DataStrucureTopicWise.SegmentTree;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package MISC;
+package DataStrucureTopicWise.MISC;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

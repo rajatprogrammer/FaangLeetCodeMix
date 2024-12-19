@@ -1,4 +1,4 @@
-package LinkedList;
+package InterviewFaang.LinkedList;
 //https://www.geeksforgeeks.org/rotate-a-linked-list/
 public class rotate_link {
 	static class Node{

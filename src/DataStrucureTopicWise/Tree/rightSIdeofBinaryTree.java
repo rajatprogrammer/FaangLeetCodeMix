@@ -24,7 +24,7 @@ public class rightSIdeofBinaryTree {
 
 	}
 	
-	 List<Integer> rightside = new ArrayList();
+	  List<Integer> rightside = new ArrayList();
 	    
 	    public void helper(TreeNode node, int level) {
 	        if (level == rightside.size()) 
@@ -37,8 +37,7 @@ public class rightSIdeofBinaryTree {
 	    }    
 	    
 	    public List<Integer> rightSideView(TreeNode root) {
-	        if (root == null) return rightside;
-	        
+	        if (root == null) return rightside;	        
 	        helper(root, 0);
 	        return rightside;
 	    }

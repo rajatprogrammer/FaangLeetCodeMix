@@ -1,4 +1,4 @@
-package Array;
+package InterviewFaang.Array;
 //https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
 public class max_continuous_array {
 

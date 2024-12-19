@@ -1,4 +1,4 @@
-package Sorting;
+package InterviewFaang.Sorting;
 //https://leetcode.com/problems/pancake-sorting/
 //https://leetcode.com/problems/spiral-matrix-ii/
 //https://leetcode.com/problems/advantage-shuffle/

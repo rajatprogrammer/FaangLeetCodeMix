@@ -1,4 +1,4 @@
-package DP;
+package DataStrucureTopicWise.DP;
 
 import java.util.Arrays;
 
@@ -15,6 +15,7 @@ public class coinChange {
 			Arrays.fill(dp[i], -1);
 		}
 		System.out.print(coinChange(coins,0,amount,dp));
+		System.out.print(changeCheck(amount,coins));
 	}
 	
 	static int  coinChange(int[]coins,int i,int amount,Integer dp[][]) {
@@ -31,5 +32,19 @@ public class coinChange {
 		return amount;
 		
 	}
+	
+	public static int changeCheck(int amount, int[] coins) {
+        int n = coins.length;
+        long[] dp = new long[amount + 1]; // Use long to avoid overflow
+        dp[0] = 1;
+
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = coins[i]; j <= amount; j++) {
+                dp[j] += dp[j - coins[i]];
+            }
+        }
+
+        return dp[amount] <= Integer.MAX_VALUE ? (int) dp[amount] : -1; // Return -1 if result exceeds int limit
+    }
 
 }

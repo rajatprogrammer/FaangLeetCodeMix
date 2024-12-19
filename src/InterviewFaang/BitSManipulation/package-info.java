@@ -1,1 +1,1 @@
-package BitSManipulation;
+package InterviewFaang.BitSManipulation;

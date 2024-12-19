@@ -1,4 +1,4 @@
-package BackTracking;
+package DataStrucureTopicWise.BackTracking;
 //https://www.geeksforgeeks.org/search-a-word-in-a-2d-grid-of-characters/
 //https://leetcode.com/problems/word-search/
 public class word_Search {

@@ -1,4 +1,4 @@
-package DP;
+package DataStrucureTopicWise.DP;
 //https://www.geeksforgeeks.org/minimum-cost-of-reducing-array-by-merging-any-adjacent-elements-repetitively/
 //amazon
 public class minimum_cost_cost {

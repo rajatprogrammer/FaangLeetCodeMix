@@ -1,4 +1,4 @@
-package Intevirew;
+package InterviewFaang.Intevirew;
 //https://leetcode.com/problems/factorial-trailing-zeroes/
 public class trailign_zero {
 

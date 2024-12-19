@@ -1,4 +1,4 @@
-package String;
+package DataStrucureTopicWise.String;
 //https://www.geeksforgeeks.org/search-in-an-array-of-strings-where-non-empty-strings-are-sorted/
 public class emptySTring {
 

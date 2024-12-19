@@ -1,4 +1,4 @@
-package Array;
+package InterviewFaang.Array;
 //https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
 public class remove_max_2_duplicate {
 

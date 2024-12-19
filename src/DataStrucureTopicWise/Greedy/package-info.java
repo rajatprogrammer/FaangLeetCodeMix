@@ -1,1 +1,1 @@
-package Greedy;
+package DataStrucureTopicWise.Greedy;

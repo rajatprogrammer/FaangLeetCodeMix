@@ -1,4 +1,4 @@
-package Subarray;
+package DataStrucureTopicWise.Subarray;
 //https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/submissions/
 public class delet_1_subarrauy {
 

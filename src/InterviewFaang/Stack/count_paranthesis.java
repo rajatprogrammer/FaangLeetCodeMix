@@ -1,4 +1,4 @@
-package Stack;
+package InterviewFaang.Stack;
 
 import java.util.Stack;
 /*

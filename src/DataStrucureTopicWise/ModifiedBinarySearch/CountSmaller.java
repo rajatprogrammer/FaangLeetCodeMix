@@ -1,4 +1,4 @@
-package ModifiedBinarySearch;
+package DataStrucureTopicWise.ModifiedBinarySearch;
 
 import java.util.ArrayList;
 import java.util.Arrays;

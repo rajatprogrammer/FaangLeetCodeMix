@@ -1,4 +1,4 @@
-package DFS;
+package InterviewFaang.DFS;
 //https://leetcode.com/problems/k-similar-strings/
 import java.util.Arrays;
 

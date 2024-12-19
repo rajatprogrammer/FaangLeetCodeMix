@@ -1,4 +1,4 @@
-package DP;
+package InterviewFaang.DP;
 //https://www.geeksforgeeks.org/palindrome-partitioning-dp-17/
 //amazon
 //https://leetcode.com/problems/shortest-palindrome/

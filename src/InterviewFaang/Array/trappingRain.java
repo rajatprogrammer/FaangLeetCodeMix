@@ -1,11 +1,11 @@
-package Array;
+package InterviewFaang.Array;
 //https://www.geeksforgeeks.org/trapping-rain-water/
 //https://leetcode.com/problems/trapping-rain-water/
 public class trappingRain {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int arr[] = {2,0,2};
+		int arr[] = {4,2,3,2,5};
 		System.out.println(maxWater(arr,arr.length));
 		System.out.println(OptimizedmaxWater(arr,arr.length));
 		System.out.println(trap(arr));

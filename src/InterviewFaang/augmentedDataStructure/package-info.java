@@ -1,1 +1,1 @@
-package augmentedDataStructure;
+package InterviewFaang.augmentedDataStructure;

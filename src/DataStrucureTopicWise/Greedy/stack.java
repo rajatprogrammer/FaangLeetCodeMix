@@ -1,4 +1,4 @@
-package Greedy;
+package DataStrucureTopicWise.Greedy;
 
 import java.util.Stack;
 

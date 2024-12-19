@@ -1,1 +1,1 @@
-package SlidingWindow;
+package DataStrucureTopicWise.SlidingWindow;

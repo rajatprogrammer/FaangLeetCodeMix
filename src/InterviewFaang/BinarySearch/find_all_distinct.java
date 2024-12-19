@@ -1,4 +1,4 @@
-package BinarySearch;
+package InterviewFaang.BinarySearch;
 //https://www.geeksforgeeks.org/count-of-n-digit-numbers-whose-sum-of-digits-equals-to-given-sum/
 //https://www.geeksforgeeks.org/sort-elements-by-frequency/
 public class find_all_distinct {

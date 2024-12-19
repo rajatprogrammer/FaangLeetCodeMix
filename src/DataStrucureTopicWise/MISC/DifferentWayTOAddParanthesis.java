@@ -1,4 +1,4 @@
-package MISC;
+package DataStrucureTopicWise.MISC;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package String;
+package InterviewFaang.String;
 //https://leetcode.com/problems/replace-the-substring-for-balanced-string/
 /*You are given a string containing only 4 kinds of characters 'Q', 'W', 'E' and 'R'.
 

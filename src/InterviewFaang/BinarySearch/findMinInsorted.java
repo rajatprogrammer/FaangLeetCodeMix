@@ -1,4 +1,4 @@
-package BinarySearch;
+package InterviewFaang.BinarySearch;
 /*Find the minimum element in a sorted and rotated array
 Difficulty Level : Medium
  Last Updated : 09 Oct, 2020

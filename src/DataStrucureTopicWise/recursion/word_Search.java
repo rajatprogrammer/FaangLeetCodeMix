@@ -1,4 +1,4 @@
-package recursion;
+package DataStrucureTopicWise.recursion;
 
 
 //https://www.geeksforgeeks.org/search-a-word-in-a-2d-grid-of-characters/

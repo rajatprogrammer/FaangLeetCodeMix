@@ -5,7 +5,7 @@ Input: arr : [1,2,2,3,4,4,5]
 Output: [[0, 6], [1, 5] ,[1, 4], [2, 5], [2, 4]]
 //microsoft
  */
-package Array;
+package InterviewFaang.Array;
 
 import java.util.ArrayList;
 import java.util.List;

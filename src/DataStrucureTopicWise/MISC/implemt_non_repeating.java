@@ -1,4 +1,4 @@
-package MISC;
+package DataStrucureTopicWise.MISC;
 
 public class implemt_non_repeating {
 

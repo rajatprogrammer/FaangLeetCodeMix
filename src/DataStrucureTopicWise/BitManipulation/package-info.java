@@ -1,1 +1,1 @@
-package BitManipulation;
+package DataStrucureTopicWise.BitManipulation;

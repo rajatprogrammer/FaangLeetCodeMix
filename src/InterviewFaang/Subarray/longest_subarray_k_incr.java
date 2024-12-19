@@ -1,4 +1,4 @@
-package Subarray;
+package InterviewFaang.Subarray;
 //amazon
 //https://www.geeksforgeeks.org/length-of-longest-subarray-with-same-elements-in-atmost-k-increments/
 public class longest_subarray_k_incr {

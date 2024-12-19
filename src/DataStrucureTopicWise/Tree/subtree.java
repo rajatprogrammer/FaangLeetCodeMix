@@ -1,4 +1,4 @@
-package Tree;
+package DataStrucureTopicWise.Tree;
 //https://leetcode.com/problems/subtree-of-another-tree/
 public class subtree {
 	static class TreeNode {

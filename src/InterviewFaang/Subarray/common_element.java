@@ -1,4 +1,4 @@
-package Subarray;
+package InterviewFaang.Subarray;
 /*Given three arrays sorted in non-decreasing order, print all common elements in these arrays.
 Examples:
 

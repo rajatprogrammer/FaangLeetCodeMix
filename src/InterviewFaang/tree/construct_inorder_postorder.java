@@ -1,4 +1,4 @@
-package tree;
+package InterviewFaang.tree;
 //https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
 import java.util.HashMap;
 

@@ -1,4 +1,4 @@
-package Probability;
+package InterviewFaang.Probability;
 
 import java.util.Random;
 

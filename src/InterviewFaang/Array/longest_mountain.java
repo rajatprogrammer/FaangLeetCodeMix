@@ -1,4 +1,4 @@
-package Array;
+package InterviewFaang.Array;
 
 //https://leetcode.com/problems/longest-mountain-in-array/
 public class longest_mountain {

@@ -5,4 +5,4 @@
  * @author rajat
  *
  */
-package modifiedBinarySearch;
+package InterviewFaang.modifiedBinarySearch;

@@ -1,4 +1,4 @@
-package Subarray;
+package DataStrucureTopicWise.Subarray;
 //https://leetcode.com/problems/subarrays-with-k-different-integers/
 import java.util.ArrayList;
 import java.util.HashMap;

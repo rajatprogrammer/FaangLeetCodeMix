@@ -1,4 +1,4 @@
-package Array;
+package InterviewFaang.Array;
 
 //https://leetcode.com/problems/find-the-winner-of-an-array-game/
 public class winnerGame {

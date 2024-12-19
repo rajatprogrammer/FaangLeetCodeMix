@@ -1,1 +1,1 @@
-package Median;
+package InterviewFaang.Median;

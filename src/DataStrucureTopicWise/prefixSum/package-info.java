@@ -1,1 +1,1 @@
-package prefixSum;
+package DataStrucureTopicWise.prefixSum;

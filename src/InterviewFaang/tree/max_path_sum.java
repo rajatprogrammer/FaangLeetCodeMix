@@ -1,6 +1,5 @@
-package tree;
+package InterviewFaang.tree;
 
-import tree.KthAncestor.TreeNode;
 //https://www.geeksforgeeks.org/find-maximum-path-sum-in-a-binary-tree/
 //https://leetcode.com/problems/binary-tree-maximum-path-sum/
 /*Maximum Path Sum in a Binary Tree

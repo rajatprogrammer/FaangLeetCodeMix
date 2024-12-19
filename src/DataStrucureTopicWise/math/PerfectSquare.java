@@ -1,4 +1,4 @@
-package math;
+package DataStrucureTopicWise.math;
 //https://leetcode.com/problems/perfect-squares/
 
 public class PerfectSquare {

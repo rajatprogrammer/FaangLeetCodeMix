@@ -1,5 +1,5 @@
 // Java implementation of Min Heap 
-package MISC;
+package DataStrucureTopicWise.MISC;
 
 public class min_heap { 
 	private int[] Heap; 

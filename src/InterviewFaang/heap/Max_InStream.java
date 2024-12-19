@@ -1,4 +1,4 @@
-package heap;
+package InterviewFaang.heap;
 import java.util.Collections;
 /*K’th largest element in a stream
 Difficulty Level : Medium

@@ -48,10 +48,9 @@ public class trappingRain {
 	//most optimized solution 2 pointers
 	public static int trap(int[] arr) {
         int result = 0; 
-    int n = arr.length;
+        int n = arr.length;
         // maximum element on left and right 
         int left_max = 0, right_max = 0; 
-  
         // indices to traverse the array 
         int lo = 0, hi = n - 1; 
   

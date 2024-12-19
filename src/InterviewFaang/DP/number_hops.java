@@ -1,4 +1,4 @@
-package DP;
+package InterviewFaang.DP;
 //https://www.geeksforgeeks.org/count-ways-reach-nth-stair-using-step-1-2-3/
 public class number_hops {
 

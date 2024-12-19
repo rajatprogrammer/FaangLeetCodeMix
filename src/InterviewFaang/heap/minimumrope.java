@@ -1,4 +1,4 @@
-package heap;
+package InterviewFaang.heap;
 
 import java.util.PriorityQueue;
 //https://www.geeksforgeeks.org/connect-n-ropes-minimum-cost/

@@ -1,4 +1,4 @@
-package MISC;
+package DataStrucureTopicWise.MISC;
 class thread implements Runnable{
 	Thread t;
 	String name;

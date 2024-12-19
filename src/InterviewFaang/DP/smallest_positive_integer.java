@@ -1,4 +1,4 @@
-package DP;
+package InterviewFaang.DP;
 //https://www.geeksforgeeks.org/find-smallest-value-represented-sum-subset-given-array/?ref=rp
 
 import java.util.ArrayList;

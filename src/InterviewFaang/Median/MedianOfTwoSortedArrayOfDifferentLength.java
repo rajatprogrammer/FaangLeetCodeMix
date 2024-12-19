@@ -1,4 +1,4 @@
-package Median;
+package InterviewFaang.Median;
 //https://www.geeksforgeeks.org/median-of-two-sorted-arrays-of-different-sizes-set-1-linear/?ref=rp
 /**
  * There are two sorted arrays nums1 and nums2 of size m and n respectively.

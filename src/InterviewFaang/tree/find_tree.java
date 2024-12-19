@@ -1,4 +1,4 @@
-package tree;
+package InterviewFaang.tree;
 
 import tree.KthAncestor.TreeNode;
 //https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/submissions/

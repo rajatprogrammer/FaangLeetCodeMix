@@ -1,4 +1,4 @@
-package DFS;
+package DataStrucureTopicWise.DFS;
 //https://leetcode.com/problems/unique-paths-iii/
 public class unique_path_3 {
 

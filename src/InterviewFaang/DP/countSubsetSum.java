@@ -1,4 +1,4 @@
-package DP;
+package InterviewFaang.DP;
 //https://www.geeksforgeeks.org/count-of-subsets-with-sum-equal-to-x/
 public class countSubsetSum {
 

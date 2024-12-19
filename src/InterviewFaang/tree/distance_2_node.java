@@ -1,4 +1,4 @@
-package tree;
+package InterviewFaang.tree;
 
 //Find distance between two nodes of a Binary Tree
 //https://www.geeksforgeeks.org/find-distance-between-two-nodes-of-a-binary-tree/

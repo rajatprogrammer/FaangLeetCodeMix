@@ -1,4 +1,4 @@
-package DP;
+package InterviewFaang.DP;
 
 //https://www.geeksforgeeks.org/subset-sum-problem-dp-25/
 public class subsetSum {

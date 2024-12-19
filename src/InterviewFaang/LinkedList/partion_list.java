@@ -1,4 +1,4 @@
-package LinkedList;
+package InterviewFaang.LinkedList;
 
 //https://leetcode.com/problems/partition-list/
 public class partion_list {

@@ -1,4 +1,4 @@
-package String;
+package DataStrucureTopicWise.String;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -20,18 +20,6 @@ public class longestStringchain {
 		 for(int i=0;i<words.length;i++) {
 			 h1.put(new String(words[i]),1);
 		 }
-//		 for(int j=words.length-1;j>=0;j--) {
-//			 String temp = words[j];
-//			 temp = temp.substring(0,temp.length()-1);
-//			 int count=1;
-//			 while(h1.containsKey(temp)) {
-//				 ++count;
-//				 temp=temp.substring(0,temp.length()-1);
-//			 }
-//			 if(count>maxCharlen) {
-//				 maxCharlen=count;
-//			 }
-//		 }
 		 for(int i=0;i<words.length;i++) {
 			 for(int k=i+1;k<words.length;k++) {
 				String s1 = words[i];

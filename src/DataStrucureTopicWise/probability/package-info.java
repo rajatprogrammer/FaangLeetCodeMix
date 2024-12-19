@@ -1,1 +1,1 @@
-package probability;
+package DataStrucureTopicWise.probability;

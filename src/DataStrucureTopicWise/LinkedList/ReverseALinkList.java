@@ -15,7 +15,7 @@ public class ReverseALinkList {
 
 	}
 	public ListNode reverseList(ListNode head) {
-	      ListNode ptr = head;
+	       ListNode ptr = head;
 	        ListNode prev = null;
 	        ListNode next = null;
 	        while(ptr!=null){

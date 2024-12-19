@@ -1,4 +1,4 @@
-package Array;
+package InterviewFaang.Array;
 //https://leetcode.com/problems/maximum-product-subarray/
 public class productSubarray {
 

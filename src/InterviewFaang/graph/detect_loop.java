@@ -1,4 +1,4 @@
-package graph;
+package InterviewFaang.graph;
 //https://www.geeksforgeeks.org/detect-cycle-in-an-undirected-graph-using-bfs/
 import java.util.LinkedList;
 import java.util.Queue;

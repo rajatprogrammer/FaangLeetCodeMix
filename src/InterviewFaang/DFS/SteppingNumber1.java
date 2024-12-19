@@ -1,4 +1,4 @@
-package DFS;
+package InterviewFaang.DFS;
 
 import java.util.LinkedList;
 import java.util.Queue;

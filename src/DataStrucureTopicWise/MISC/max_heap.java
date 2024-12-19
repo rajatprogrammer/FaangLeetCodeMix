@@ -1,4 +1,4 @@
-package MISC;
+package DataStrucureTopicWise.MISC;
 //https://www.geeksforgeeks.org/max-heap-in-java/
 public class max_heap {
 

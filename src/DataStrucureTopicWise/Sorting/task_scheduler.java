@@ -1,4 +1,4 @@
-package Sorting;
+package DataStrucureTopicWise.Sorting;
 //https://leetcode.com/problems/task-scheduler/solution/
 import java.util.Map;
 import java.util.PriorityQueue;

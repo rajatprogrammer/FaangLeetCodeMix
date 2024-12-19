@@ -1,4 +1,4 @@
-package math;
+package DataStrucureTopicWise.math;
 //https://leetcode.com/problems/powx-n/
 public class power {
 

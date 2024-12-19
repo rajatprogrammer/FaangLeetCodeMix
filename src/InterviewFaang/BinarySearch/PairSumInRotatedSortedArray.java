@@ -1,4 +1,4 @@
-package BinarySearch;
+package InterviewFaang.BinarySearch;
 /*
  * https://www.geeksforgeeks.org/given-a-sorted-and-rotated-array-find-if-there-is-a-pair-with-a-given-sum/?ref=rp
  * Given an array that is sorted and then rotated around an unknown point. Find if the array has a pair with a given sum ‘x’. It may be assumed that all elements in the array are distinct.

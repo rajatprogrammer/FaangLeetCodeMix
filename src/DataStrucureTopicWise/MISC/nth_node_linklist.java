@@ -1,4 +1,4 @@
-package MISC;
+package DataStrucureTopicWise.MISC;
 
 class node{
 	node next;

@@ -1,4 +1,4 @@
-package MISC;
+package DataStrucureTopicWise.MISC;
 
 import java.util.Arrays;
 import java.util.Comparator;

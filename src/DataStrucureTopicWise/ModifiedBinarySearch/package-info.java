@@ -1,1 +1,1 @@
-package ModifiedBinarySearch;
+package DataStrucureTopicWise.ModifiedBinarySearch;

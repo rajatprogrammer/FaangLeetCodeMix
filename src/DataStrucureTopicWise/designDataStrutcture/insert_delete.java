@@ -1,4 +1,4 @@
-package designDataStrutcture;
+package DataStrucureTopicWise.designDataStrutcture;
 // https://leetcode.com/problems/insert-delete-getrandom-o1/
 //https://www.geeksforgeeks.org/design-a-data-structure-that-supports-insert-delete-search-and-getrandom-in-constant-time/
 import java.util.ArrayList;

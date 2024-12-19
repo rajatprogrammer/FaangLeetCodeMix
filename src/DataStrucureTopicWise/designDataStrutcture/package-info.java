@@ -1,1 +1,1 @@
-package designDataStrutcture;
+package DataStrucureTopicWise.designDataStrutcture;

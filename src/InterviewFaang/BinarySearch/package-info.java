@@ -1,1 +1,1 @@
-package BinarySearch;
+package InterviewFaang.BinarySearch;

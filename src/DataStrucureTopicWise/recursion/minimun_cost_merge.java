@@ -1,4 +1,4 @@
-package recursion;
+package DataStrucureTopicWise.recursion;
 //https://leetcode.com/problems/minimum-cost-to-merge-stones/
 public class minimun_cost_merge {
 	public static void main(String[] args) {

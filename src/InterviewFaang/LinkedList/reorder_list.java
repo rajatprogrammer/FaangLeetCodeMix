@@ -1,4 +1,4 @@
-package LinkedList;
+package InterviewFaang.LinkedList;
 //https://leetcode.com/problems/reorder-list/
 //https://www.geeksforgeeks.org/rearrange-a-given-linked-list-in-place/
 public class reorder_list {

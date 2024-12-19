@@ -1,4 +1,4 @@
-package DP;
+package InterviewFaang.DP;
 //https://www.geeksforgeeks.org/count-all-increasing-subsequences/
 public class allIncreasing {
 

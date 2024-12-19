@@ -1,1 +1,1 @@
-package Subarray;
+package InterviewFaang.Subarray;

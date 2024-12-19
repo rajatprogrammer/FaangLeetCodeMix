@@ -1,4 +1,4 @@
-package Subarray;
+package InterviewFaang.Subarray;
 
 //https://leetcode.com/problems/max-consecutive-ones-iii/
 /*
@@ -24,8 +24,8 @@ public class max_consecutive_1 {
 		System.out.println(longestOnes(arr,K));
 	}
 	public static int longestOnes(int[] A, int K) {
-        int res = 0, count = 0, n = A.length;
-     int i=0;
+      int res = 0, count = 0, n = A.length;
+      int i=0;
      for(int j=0; j<n; j++){
          if(A[j]==0){
              count++;

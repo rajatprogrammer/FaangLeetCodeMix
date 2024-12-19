@@ -1,4 +1,4 @@
-package Heap;
+package DataStrucureTopicWise.Heap;
 // this question is also done with stack in o(n) time and o(n) space
 import java.util.Comparator;
 import java.util.PriorityQueue;
@@ -27,7 +27,7 @@ public class maximumSubarray {
 		 for(int i=k;i<n;i++) {
 			pq.remove(arr[i-k]);
 			pq.add(arr[i]);
-			System.out.print(pq.peek());
+			System.out.print(","+pq.peek());
 		 }
 		 
 	 }

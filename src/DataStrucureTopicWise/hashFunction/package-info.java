@@ -1,1 +1,1 @@
-package hashFunction;
+package DataStrucureTopicWise.hashFunction;

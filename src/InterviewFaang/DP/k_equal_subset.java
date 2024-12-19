@@ -1,4 +1,4 @@
-package DP;
+package InterviewFaang.DP;
 //https://www.geeksforgeeks.org/partition-set-k-subsets-equal-sum/
 //https://leetcode.com/problems/partition-to-k-equal-sum-subsets/
 

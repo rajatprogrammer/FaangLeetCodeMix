@@ -1,4 +1,4 @@
-package Tree;
+package DataStrucureTopicWise.Tree;
 //https://leetcode.com/problems/smallest-subtree-with-all-the-deepest-nodes/
 import java.util.LinkedList;
 import java.util.Queue;

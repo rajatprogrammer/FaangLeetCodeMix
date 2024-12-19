@@ -1,1 +1,1 @@
-package Trie;
+package InterviewFaang.Trie;

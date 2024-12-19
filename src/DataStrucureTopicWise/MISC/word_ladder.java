@@ -1,4 +1,4 @@
-package MISC;
+package DataStrucureTopicWise.MISC;
 
 import java.util.HashSet;
 import java.util.Iterator;

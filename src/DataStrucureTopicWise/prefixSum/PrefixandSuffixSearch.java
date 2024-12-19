@@ -1,4 +1,4 @@
-package prefixSum;
+package DataStrucureTopicWise.prefixSum;
 
 import java.util.HashMap;
 

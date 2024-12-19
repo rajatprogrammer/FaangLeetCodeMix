@@ -1,4 +1,4 @@
-package Graph;
+package DataStrucureTopicWise.Graph;
 import java.util.HashMap;
 import java.util.Map;
 //https://www.geeksforgeeks.org/disjoint-set-data-structures/

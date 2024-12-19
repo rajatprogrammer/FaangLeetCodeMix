@@ -1,4 +1,4 @@
-package Subarray;
+package DataStrucureTopicWise.Subarray;
 
 import java.util.Stack;
 

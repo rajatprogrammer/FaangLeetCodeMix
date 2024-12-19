@@ -1,4 +1,4 @@
-package DP;
+package DataStrucureTopicWise.DP;
 //https://www.geeksforgeeks.org/longest-common-substring-dp-29/
 public class longestSubstring {
 

@@ -1,4 +1,4 @@
-package Array;
+package InterviewFaang.Array;
 //https://leetcode.com/problems/next-greater-element-ii/
 public class next_greater_2 {
 

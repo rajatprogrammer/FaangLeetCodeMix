@@ -1,4 +1,4 @@
-package Graph;
+package DataStrucureTopicWise.Graph;
 
 import java.util.LinkedList;
 import java.util.List;

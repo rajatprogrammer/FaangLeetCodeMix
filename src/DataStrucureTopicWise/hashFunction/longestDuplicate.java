@@ -1,6 +1,8 @@
-package hashFunction;
+package DataStrucureTopicWise.hashFunction;
+import java.util.ArrayList;
 //https://leetcode.com/problems/longest-duplicate-substring/submissions/
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class longestDuplicate {
@@ -8,69 +10,55 @@ public class longestDuplicate {
 		// TODO Auto-generated method stub
 
 	}
-	public String longestDupSubstringRajat(String S) {
-		HashMap<String, Integer> hs = new HashMap<String, Integer>();
-		int low=0;
-		int high = S.length();
-		int mid=0;
-		int max_len=0;
-		String max_string = "";
-		while(low<=high) {
-			 mid = low + (high-low)/2;
-			 String substr = S.substring(low,mid);
-			 if(hs.containsKey(substr)) {
-				 hs.put(substr,hs.get(substr)+1);
-				 if(max_len<hs.get(substr)) {
-					 max_len=hs.get(substr);
-					 max_string = substr;
-				 }
-			 }else {
-				 hs.put(substr,1);
-			 }
-			 low=low+1;	
-		}
-		return max_string;
-		
-	}
 	public String longestDupSubstring(String S) {
-		int low =0;
-		int high = S.length()-1;
-		int mid =0;
-		while(low<high) {
-			mid = low + (high-low)/2;
-			if(isDuplicatePresent(S,mid)) {
-				low=mid;
-			}else {
-				high = mid-1;
-			}
-		}
-		return findDuplicate(S,low);
-	}
-	
-	private boolean isDuplicatePresent(String S, int length) {
-		return findDuplicate(S,length)!=null?true:false;
-	}
-	
-	 private String findDuplicate(String S, int length) { 
-		 long prime = 29;
-		 long hash=0;
-		 long firstEntryPower = 1;
-		 for(int i=0;i<length;i++) {
-			firstEntryPower = firstEntryPower * prime;
-			hash = hash * prime + S.charAt(i)-'a';
-		 }
-		 Map<Long, Integer> map = new HashMap<>();
-	     map.put(hash, 0);
-	     
-	     for(int i=length;i<S.length();i++) {
-	    	 hash = hash * prime + (S.charAt(i) - 'a');
-	    	 hash = hash- firstEntryPower * (S.charAt(i - length) - 'a');
-	    	 if (map.containsKey(hash)) {
-	             int index = map.get(hash);
-	             return S.substring(index, index + length);
-	         }
-		     map.put(hash, i - length + 1);
-	     }
-	     return null;
-	 }
+        int start = 0;
+        int end = S.length() - 1;
+        String result = "";
+        while (start <= end) {
+            int mid = (start + end) / 2;
+            String dupSubstring = dupSubstring(S, mid); // check if any dupSubstring of mid size
+            if (dupSubstring != null) {
+                start = mid + 1;
+                result = dupSubstring;
+            } else end = mid - 1;
+        }
+
+        return result;
+    }
+
+    private String dupSubstring(String s, int m) {
+        int R = 31; // prime
+        Map<Long, List<Integer>> map = new HashMap<>(); // why Map<Long, List<Integer>> ? with this we will keep index of all string of having same hash.
+
+        long patHash = hash(s, m, R);
+        map.putIfAbsent(patHash, new ArrayList());
+        map.get(patHash).add(0);
+
+        // pre-compute R^(m-1) % q for use in removing leading digit
+        long RM = 1;
+        for (int i = 1; i <= m - 1; i++)
+            RM = (R * RM);
+
+        for (int i = m; i < s.length(); i++) {
+            // Remove leading digit, add trailing digit, check for match.
+            patHash = (patHash - RM * s.charAt(i - m));
+            patHash = (patHash * R + s.charAt(i));
+            if (map.containsKey(patHash)) {
+                for(int index: map.get(patHash)) 
+                    if(s.substring(index, index + m).equals(s.substring(i - m + 1, i + 1)))
+                        return s.substring(i - m + 1, i + 1);
+            } 
+            map.putIfAbsent(patHash, new ArrayList());
+            map.get(patHash).add(i - m + 1);
+        }
+
+        return null;
+    }
+
+    private long hash(String s, int m, int R) {
+        long h = 0;
+        for (int j = 0; j < m; j++)
+            h = (R * h + s.charAt(j));
+        return h;
+    }
 }

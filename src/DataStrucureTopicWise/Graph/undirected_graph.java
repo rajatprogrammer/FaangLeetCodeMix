@@ -1,5 +1,5 @@
 // https://www.geeksforgeeks.org/graph-and-its-representations/
-package Graph;
+package DataStrucureTopicWise.Graph;
 
 import java.util.ArrayList;
 import java.util.List;

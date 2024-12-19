@@ -1,4 +1,4 @@
-package String;
+package DataStrucureTopicWise.String;
 
 import java.util.Arrays;
 //https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/
@@ -7,23 +7,40 @@ public class substring_max {
 	public static void main(String[] args) {
 		String s = "ababacb";
 		int k=2;
-		System.out.println(longestSubstringRecursive(s,k));
-		System.out.println(longestSubstringSliding(s,k));
+		System.out.println(longestSubstring(s,k));
 
 	}
-	public static int longestSubstringRecursive(String s, int k) {
-		if(s.length() < k) return 0;
-		int[] count = new int[26];
-		for(int i = 0; i < s.length(); i++) count[s.charAt(i)-'a']++;
-		for(int i = 0; i < s.length(); i++) {
-			if(count[s.charAt(i)-'a'] >= k) continue;
-			int j = i + 1;
-			while(j < s.length() && count[s.charAt(j)-'a'] < k) j++;
-			return Math.max(longestSubstringRecursive(s.substring(0, i), k), longestSubstringRecursive(s.substring(j), k));
-		}
-		return s.length();
-	}
-	 public static int longestSubstringSliding(String s, int k) {
+	
+	 public int longestSubstring1(String s, int k) {
+	        int len = 0;
+	        int[] count = new int[26];
+	        for (int i = 1; i <= 26; i++) {
+	            Arrays.fill(count, 0);
+
+	            int start = 0, end = 0;
+	            int unique = 0;
+	            while (end < s.length()) {
+	                boolean flag = true;
+	                if (count[s.charAt(end++) - 'a']++ == 0)
+	                    unique++;
+
+	                while (unique > i) {
+	                    if (count[s.charAt(start++) - 'a']-- == 1)
+	                        unique--;
+	                }
+
+	                for (int j = 0; j < 26; j++) {
+	                    if (count[j] > 0 && count[j] < k)
+	                        flag = false;
+	                }
+	                if (flag) {
+	                    len = Math.max(len, end - start);
+	                }
+	            }
+	        }
+	        return len;
+	    }
+	    public static int longestSubstring(String s, int k) {
 	        char[] str = s.toCharArray();
 	        int[] countMap = new int[26];
 	        int maxUnique = getMaxUniqueLetters(s);
@@ -69,4 +86,5 @@ public class substring_max {
 	        }
 	        return maxUnique;
 	    }
+
 }

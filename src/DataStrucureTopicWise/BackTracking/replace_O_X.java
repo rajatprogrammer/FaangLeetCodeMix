@@ -1,4 +1,4 @@
-package BackTracking;
+package DataStrucureTopicWise.BackTracking;
 //https://www.geeksforgeeks.org/given-matrix-o-x-replace-o-x-surrounded-x/
 public class replace_O_X {
 

@@ -1,4 +1,4 @@
-package probability;
+package DataStrucureTopicWise.probability;
 //https://leetcode.com/problems/random-point-in-non-overlapping-rectangles/
 import java.util.Arrays;
 import java.util.Random;

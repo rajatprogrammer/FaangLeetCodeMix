@@ -1,4 +1,4 @@
-package ModifiedBinarySearch;
+package DataStrucureTopicWise.ModifiedBinarySearch;
 /*
  * https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
  * Given an array nums, return true if the array was originally sorted in non-decreasing order, then rotated some number of positions (including zero). Otherwise, return false.

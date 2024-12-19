@@ -1,4 +1,4 @@
-package graph;
+package InterviewFaang.graph;
 //https://www.interviewbit.com/problems/black-shapes/
 import java.util.ArrayList;
 import java.util.LinkedList;

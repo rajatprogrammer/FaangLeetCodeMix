@@ -18,7 +18,7 @@ Point To Note
 
 Your solution querry computing time is equal to O(log(n)) and your insertion time is also O(log n). and don't used any sorting on whole data
  */
-package LinkedList;
+package InterviewFaang.LinkedList;
 
 public class continuos_router {
 	static class Node{

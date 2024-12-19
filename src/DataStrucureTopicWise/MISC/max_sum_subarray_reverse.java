@@ -1,4 +1,4 @@
-package MISC;
+package DataStrucureTopicWise.MISC;
 
 /*Maximum sum subarray after altering the array
 Given an array arr[] of size N. The task is to find the maximum subarray sum possible after performing the given operation at most once. In a single operation, you can choose any index i and either the subarray arr[0…i] or the subarray arr[i…N-1] can be reversed.

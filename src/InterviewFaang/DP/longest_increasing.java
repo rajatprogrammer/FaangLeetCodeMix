@@ -1,4 +1,4 @@
-package DP;
+package InterviewFaang.DP;
 
 import java.util.Arrays;
 //https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/
@@ -7,26 +7,42 @@ public class longest_increasing {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int arr[] = {1,2,3,4};
-		System.out.print(longestIncreasing(arr));
 		  System.out.print("Length of LIS is "
-                  + LIS(arr, 0, arr.length, Integer.MIN_VALUE));
+                  + lengthOfLIS(arr));
+		  System.out.print("Length of LIS is "
+                  + LIS(arr,0,arr.length,Integer.MIN_VALUE));
 	}
 	
-	static int longestIncreasing(int arr[]) {
-		int dp[] = new int[arr.length+1];
-		Arrays.fill(dp,1);
-		int max=0;
-		for(int i=1;i<arr.length;i++) {
-			for(int j=0;j<i;j++) {
-				if(arr[i]>arr[j]) {
-					dp[i]=Math.max(dp[i], dp[j])+1;
-					max=Math.max(dp[i], max);
-				}
-			}
-		}
-		return max;
-	}
-	public static int LIS(int[] A, int i, int n, int prev)
+	public static int lengthOfLIS(int[] A) {
+        if(A.length<=0){
+            return 0;
+        }
+      int[] L = new int[A.length];
+ 
+        // longest increasing sub-sequence ending with A[0] has length 1
+        L[0] = 1;
+ 
+        // start from second element in the array
+        for (int i = 1; i < A.length; i++)
+        {
+            // do for each element in sub-array A[0..i-1]
+            for (int j = 0; j < i; j++)
+            {
+                // find longest increasing sub-sequence that ends with A[j]
+                // where A[j] is less than the current element A[i]
+                if (A[j] < A[i] && L[j] > L[i]) {
+                    L[i] = L[j];
+                }
+            }
+            // include A[i] in LIS
+            L[i]++;
+        }
+ 
+        // return longest increasing sub-sequence (having maximum length)
+        return Arrays.stream(L).max().getAsInt();
+    }
+	
+	public static  int LIS(int[] A, int i, int n, int prev)
     {
         // Base case: nothing is remaining
         if (i == n) {

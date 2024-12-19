@@ -18,7 +18,7 @@ There are following 2 ways to reach 13
 (3, 10)
   **/
 
-package MISC;
+package DataStrucureTopicWise.MISC;
 
 public class number_of_way {
 

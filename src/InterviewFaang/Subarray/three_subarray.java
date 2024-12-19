@@ -1,4 +1,4 @@
-package Subarray;
+package InterviewFaang.Subarray;
 //https://leetcode.com/problems/ways-to-split-array-into-three-subarrays/
 /*A split of an integer array is good if:
 

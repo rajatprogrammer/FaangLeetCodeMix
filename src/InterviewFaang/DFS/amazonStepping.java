@@ -1,4 +1,4 @@
-package DFS;
+package InterviewFaang.DFS;
 //https://www.geeksforgeeks.org/stepping-numbers/
 public class amazonStepping {
 

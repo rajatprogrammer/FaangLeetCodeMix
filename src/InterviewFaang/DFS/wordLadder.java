@@ -1,4 +1,4 @@
-package DFS;
+package InterviewFaang.DFS;
 //https://leetcode.com/problems/word-ladder/
 //amazon
 /*127. Word Ladder
@@ -66,6 +66,7 @@ public class wordLadder {
 		System.out.println(ladderLengthOptimized(begin, end, ls));
 	}
 	public static int ladderLengthOptimized(String beginWord, String endWord, List<String> wordList) {
+		int maxLevel = 0;
         Set<String> wordSet = new HashSet(wordList); // for quick lookup convert list to set
         
         Queue<String> queue = new LinkedList();
@@ -82,7 +83,7 @@ public class wordLadder {
             while(size-- > 0) {
                 String word = queue.poll();
                 if(endWord.equals(word)) // if current word is endWord return level
-                    return level;
+                    maxLevel = Math.max(maxLevel, level);
                 for(int i = 0; i < word.length(); i++) { // for each characters of word
                     for(char c = 'a'; c <= 'z'; c++) { // replace with a-z 
                         String newWord = word.substring(0, i) + c + word.substring(i + 1);
@@ -95,7 +96,7 @@ public class wordLadder {
             }
         }
         
-        return 0;
+        return maxLevel;
     }
 //designed by me give tle
 //	public static int ladderLength(String beginWord, String endWord, List<String> wordList) {

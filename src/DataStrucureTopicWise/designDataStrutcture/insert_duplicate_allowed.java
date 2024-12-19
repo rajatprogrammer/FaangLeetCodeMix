@@ -1,4 +1,4 @@
-package designDataStrutcture;
+package DataStrucureTopicWise.designDataStrutcture;
 //https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -40,7 +40,8 @@ public class insert_duplicate_allowed {
 	        Set<Integer>l=map.get(val);
 	        int removeIndex=0;
 	        for(Integer key:l){
-	            removeIndex=key;break;
+	            removeIndex=key;
+	            break;
 	        }
 	        l.remove(removeIndex);
 	        if(l.size()==0)map.remove(val);

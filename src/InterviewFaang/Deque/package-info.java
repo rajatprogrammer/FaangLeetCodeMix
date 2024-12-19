@@ -1,1 +1,1 @@
-package Deque;
+package InterviewFaang.Deque;

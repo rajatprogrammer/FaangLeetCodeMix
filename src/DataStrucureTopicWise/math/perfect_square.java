@@ -1,4 +1,4 @@
-package math;
+package DataStrucureTopicWise.math;
 
 public class perfect_square {
 

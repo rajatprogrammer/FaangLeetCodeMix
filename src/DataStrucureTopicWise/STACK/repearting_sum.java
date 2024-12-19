@@ -1,4 +1,4 @@
-package STACK;
+package DataStrucureTopicWise.STACK;
 
 import java.util.Stack;
 

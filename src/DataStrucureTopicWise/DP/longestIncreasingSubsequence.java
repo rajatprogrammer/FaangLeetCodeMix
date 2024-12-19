@@ -1,4 +1,4 @@
-package DP;
+package DataStrucureTopicWise.DP;
 //https://www.geeksforgeeks.org/longest-increasing-subsequence-dp-3/
 import java.util.Arrays;
 

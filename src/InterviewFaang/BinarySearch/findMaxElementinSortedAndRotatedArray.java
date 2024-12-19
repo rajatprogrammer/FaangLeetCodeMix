@@ -1,4 +1,4 @@
-package BinarySearch;
+package InterviewFaang.BinarySearch;
 /*
  * https://www.geeksforgeeks.org/maximum-element-in-a-sorted-and-rotated-array/?ref=rp
  * https://www.geeksforgeeks.org/check-if-an-array-is-sorted-and-rotated-using-binary-search/?ref=rp

@@ -1,1 +1,1 @@
-package Probability;
+package InterviewFaang.Probability;

@@ -1,5 +1,5 @@
-package Tree;
-
+package DataStrucureTopicWise.Tree;
+//https://github.com/eMahtab/morris-inorder-traversal
 public class Morrios_order_traversal {
 	static class node{
 		int data;
@@ -31,6 +31,30 @@ public class Morrios_order_traversal {
 				}
 			}
 		}
+		
+		 public void preorder(node root) {
+			 node current = root;
+	        while (current != null) {
+	            if(current.left == null) {
+	                System.out.print(current.data + " ");
+	                current = current.right;
+	            }
+	            else {
+	            	node predecessor = current.left;
+	                while(predecessor.right != current && predecessor.right != null) {
+	                    predecessor = predecessor.right;
+	                }
+	                if(predecessor.right == null){
+	                    predecessor.right = current;
+	                    System.out.print(current.data + " ");
+	                    current = current.left;
+	                }else{
+	                    predecessor.right = null;
+	                    current = current.right;
+	                }
+	            }
+	        }
+	    }
 		
 	}
 	public static void main(String[] args) {

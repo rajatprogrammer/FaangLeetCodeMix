@@ -1,4 +1,4 @@
-package BinarySearch;
+package InterviewFaang.BinarySearch;
 //https://www.geeksforgeeks.org/square-root-of-an-integer/
 /*Input: x = 4
 Output: 2

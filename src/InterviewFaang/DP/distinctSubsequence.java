@@ -1,6 +1,8 @@
-package DP;
+package InterviewFaang.DP;
 
 //https://www.geeksforgeeks.org/count-distinct-occurrences-as-a-subsequence/
+//https://leetcode.com/problems/distinct-subsequences/description/
+
 public class distinctSubsequence {
 
 	public static void main(String[] args) {

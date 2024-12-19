@@ -1,4 +1,4 @@
-package BitSManipulation;
+package InterviewFaang.BitSManipulation;
 //https://www.geeksforgeeks.org/count-set-bits-in-an-integer/
 public class setBit {
 

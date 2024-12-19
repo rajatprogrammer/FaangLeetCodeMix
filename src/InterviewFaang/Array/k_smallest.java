@@ -1,4 +1,4 @@
-package Array;
+package InterviewFaang.Array;
 //https://leetcode.com/problems/kth-missing-positive-number/
 public class k_smallest {
 

@@ -1,4 +1,4 @@
-package Array;
+package InterviewFaang.Array;
 //https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
 public class package_ship {
 

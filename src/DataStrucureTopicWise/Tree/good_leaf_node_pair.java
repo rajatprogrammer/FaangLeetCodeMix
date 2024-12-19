@@ -1,4 +1,4 @@
-package Tree;
+package DataStrucureTopicWise.Tree;
 //https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/submissions/
 public class good_leaf_node_pair {
 	int result=0;

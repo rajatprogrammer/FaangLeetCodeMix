@@ -1,4 +1,4 @@
-package String;
+package InterviewFaang.String;
 //https://www.geeksforgeeks.org/word-wrap-problem-dp-19/
 //microsoft
 //https://www.youtube.com/watch?v=RORuwHiblPc

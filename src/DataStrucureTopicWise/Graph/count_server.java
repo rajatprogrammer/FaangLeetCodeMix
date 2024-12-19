@@ -1,4 +1,4 @@
-package Graph;
+package DataStrucureTopicWise.Graph;
 //https://leetcode.com/problems/count-servers-that-communicate/
 import java.util.HashMap;
 

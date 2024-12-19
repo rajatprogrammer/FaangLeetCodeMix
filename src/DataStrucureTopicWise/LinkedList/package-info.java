@@ -1,1 +1,1 @@
-package LinkedList;
+package DataStrucureTopicWise.LinkedList;

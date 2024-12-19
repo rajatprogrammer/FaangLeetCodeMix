@@ -1,4 +1,4 @@
-package Array;
+package InterviewFaang.Array;
 //https://www.geeksforgeeks.org/maximum-sum-such-that-no-two-elements-are-adjacent/
 public class maximum_sum_not_Adjencent {
 

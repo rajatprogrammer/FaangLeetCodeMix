@@ -1,4 +1,4 @@
-package Subarray;
+package InterviewFaang.Subarray;
 ///https://www.geeksforgeeks.org/maximum-product-subarray/
 public class max_product_subarray {
 

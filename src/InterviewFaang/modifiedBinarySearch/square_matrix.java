@@ -1,4 +1,4 @@
-package modifiedBinarySearch;
+package InterviewFaang.modifiedBinarySearch;
 //https://www.geeksforgeeks.org/find-the-row-with-maximum-number-1s/
 public class square_matrix {
 

@@ -1,4 +1,4 @@
-package tree;
+package InterviewFaang.tree;
 //https://www.geeksforgeeks.org/sorted-array-to-balanced-bst/
 public class sortedArray_bst {
 	static Node root; 

@@ -1,4 +1,4 @@
-package graph;
+package InterviewFaang.graph;
 //https://leetcode.com/problems/count-servers-that-communicate/
 import java.util.HashMap;
 

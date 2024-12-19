@@ -1,4 +1,4 @@
-package Deque;
+package InterviewFaang.Deque;
 
 import java.util.Stack;
 

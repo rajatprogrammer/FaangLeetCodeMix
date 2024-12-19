@@ -1,4 +1,4 @@
-package DP;
+package InterviewFaang.DP;
 //https://www.geeksforgeeks.org/partition-problem-dp-18/
 public class parition_18 {
 

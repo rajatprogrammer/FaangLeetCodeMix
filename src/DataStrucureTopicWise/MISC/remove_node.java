@@ -1,4 +1,4 @@
-package MISC;
+package DataStrucureTopicWise.MISC;
 /**Remove all nodes which don’t lie in any path with sum>= k
 Given a binary tree, a complete path is defined as a path from root to a leaf. The sum of all nodes on that path is defined as the sum of that path. Given a number K, you have to remove (prune the tree) all nodes which don’t lie in any path with sum>=k.
 

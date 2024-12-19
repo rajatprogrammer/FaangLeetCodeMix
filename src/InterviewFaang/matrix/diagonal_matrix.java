@@ -1,4 +1,4 @@
-package matrix;
+package InterviewFaang.matrix;
 /*
  * https://leetcode.com/problems/diagonal-traverse/
  * https://www.geeksforgeeks.org/print-matrix-diagonal-pattern/

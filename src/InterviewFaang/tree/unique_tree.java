@@ -1,4 +1,4 @@
-package tree;
+package InterviewFaang.tree;
 //https://leetcode.com/problems/unique-binary-search-trees-ii/
 //https://www.geeksforgeeks.org/construct-all-possible-bsts-for-keys-1-to-n/
 import java.util.ArrayList;
@@ -26,7 +26,7 @@ public class unique_tree {
 		// TODO Auto-generated method stub
 
 	}
-	    public List<TreeNode> generateTrees(int n) {
+	 public List<TreeNode> generateTrees(int n) {
 	        if(n == 0){
 	            return new ArrayList<TreeNode>();
 	        }

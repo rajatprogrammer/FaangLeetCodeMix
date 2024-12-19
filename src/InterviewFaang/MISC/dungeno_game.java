@@ -1,4 +1,4 @@
-package MISC;
+package InterviewFaang.MISC;
 //https://leetcode.com/problems/dungeon-game/
 public class dungeno_game {
 

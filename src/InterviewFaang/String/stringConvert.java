@@ -1,4 +1,4 @@
-package String;
+package InterviewFaang.String;
 
 import java.util.Arrays;
 

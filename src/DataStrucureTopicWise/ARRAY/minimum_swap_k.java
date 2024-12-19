@@ -26,9 +26,7 @@ public class minimum_swap_k {
 	        int prefSum[]=new int[ones.size()];
 	        prefSum[0] =ones.get(0);
 	        for(int i = 1; i < ones.size(); i++)
-	            prefSum[i] = prefSum[i - 1] + ones.get(i);
-
-	        
+	            prefSum[i] = prefSum[i - 1] + ones.get(i);    
 	        int minMoves = Integer.MAX_VALUE;
 	        int left = 0;
 	        int right = k - 1;
@@ -46,7 +44,8 @@ public class minimum_swap_k {
 	            else{
 	                int mid = (left + right) / 2;
 	                int radius=mid-left;
-	                int excessMoves;int total=0;
+	                int excessMoves;
+	                int total=0;
 	               int lsum=(mid == 0 ? 0 : prefSum[mid - 1]) - (left == 0 ? 0 : prefSum[left - 1]);
 	              int rsum=prefSum[right]-prefSum[mid] ;
 	               excessMoves=radius*(radius+1);

@@ -1,4 +1,4 @@
-package Problems;
+package DataStrucureTopicWise.Problems;
 //https://leetcode.com/problems/count-and-say/
 public class count_say {
 

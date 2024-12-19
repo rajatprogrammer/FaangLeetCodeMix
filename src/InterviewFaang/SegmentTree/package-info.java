@@ -1,1 +1,1 @@
-package SegmentTree;
+package InterviewFaang.SegmentTree;

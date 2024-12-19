@@ -1,4 +1,4 @@
-package tree;
+package InterviewFaang.tree;
 // https://leetcode.com/problems/numbers-with-same-consecutive-differences/
 
 import java.util.ArrayList;

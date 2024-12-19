@@ -1,4 +1,4 @@
-package DP;
+package DataStrucureTopicWise.DP;
 //https://www.geeksforgeeks.org/maximum-subsequence-sum-from-a-given-array-which-is-a-perfect-square/
 public class square_subsequence {
 

@@ -1,4 +1,4 @@
-package Median;
+package InterviewFaang.Median;
 //https://leetcode.com/problems/median-of-two-sorted-arrays/
 public class median_2_sorted_array {
 

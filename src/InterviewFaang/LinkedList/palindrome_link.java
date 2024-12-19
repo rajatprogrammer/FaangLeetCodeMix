@@ -1,4 +1,4 @@
-package LinkedList;
+package InterviewFaang.LinkedList;
 //https://leetcode.com/problems/palindrome-linked-list/
 public class palindrome_link {
 	 static ListNode node;

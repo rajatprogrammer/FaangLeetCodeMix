@@ -1,4 +1,4 @@
-package String;
+package InterviewFaang.String;
 /*paypal
  * https://www.geeksforgeeks.org/print-concatenation-of-zig-zag-string-form-in-n-rows/
  * */

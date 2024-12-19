@@ -1,4 +1,4 @@
-package BitManipulation;
+package DataStrucureTopicWise.BitManipulation;
 //https://leetcode.com/problems/single-number-ii/
 //first we do biwise xor with nums[i] and then do and with completement of  two variable for onces
 public class singleNumber {

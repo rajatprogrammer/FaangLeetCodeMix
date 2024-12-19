@@ -1,4 +1,4 @@
-package DP;
+package InterviewFaang.DP;
 
 import java.util.Arrays;
 

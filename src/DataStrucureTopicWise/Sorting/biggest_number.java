@@ -1,4 +1,4 @@
-package Sorting;
+package DataStrucureTopicWise.Sorting;
 // https://www.geeksforgeeks.org/given-an-array-of-numbers-arrange-the-numbers-to-form-the-biggest-number/
 public class biggest_number {
 

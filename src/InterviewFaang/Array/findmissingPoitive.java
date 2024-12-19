@@ -1,4 +1,4 @@
-package Array;
+package InterviewFaang.Array;
 /*Find the smallest positive number missing from an unsorted array | Set 1
 Difficulty Level : Hard
 //amazon

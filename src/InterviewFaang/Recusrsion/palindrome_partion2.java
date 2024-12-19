@@ -1,4 +1,4 @@
-package Recusrsion;
+package InterviewFaang.Recusrsion;
 //https://leetcode.com/problems/palindrome-partitioning-ii/
 public class palindrome_partion2 {
 

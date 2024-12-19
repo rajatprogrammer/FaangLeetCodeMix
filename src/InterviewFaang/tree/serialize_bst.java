@@ -1,4 +1,4 @@
-package tree;
+package InterviewFaang.tree;
 //amazon
 //https://leetcode.com/problems/serialize-and-deserialize-bst/
 //https://www.geeksforgeeks.org/serialize-deserialize-binary-tree/

@@ -10,25 +10,22 @@ public class MinimumDelre {
 	
 	public static int minimumDeletions(String s) {
         int n = s.length();
-        int[] countA = new int[n];
-        int aCount = 0;
+        int countB = 0;  // Count of 'b' characters encountered
+        int result = 0;  // Minimum deletions needed
 
-        // First pass: compute count_a which stores the number of
-        // 'a' characters to the right of the current position
-        for (int i = n - 1; i >= 0; i--) {
-            countA[i] = aCount;
-            if (s.charAt(i) == 'a') aCount++;
+        for (char c : s.toCharArray()) {
+            if (c == 'b') {
+                countB++;  // Increment count of 'b'
+            } else {  // c == 'a'
+                // We have two choices:
+                // 1. Keep this 'a' and delete all previous 'b's (countB)
+                // 2. Delete this 'a' (increment result)
+                // We choose the option that requires fewer deletions
+                result = Math.min(result + 1, countB);
+            }
         }
 
-        int minDeletions = n;
-        int bCount = 0;
-        // Second pass: compute minimum deletions on the fly
-        for (int i = 0; i < n; i++) {
-            minDeletions = Math.min(countA[i] + bCount, minDeletions);
-            if (s.charAt(i) == 'b') bCount++;
-        }
-
-        return minDeletions;
+        return result;
     }
 
 }

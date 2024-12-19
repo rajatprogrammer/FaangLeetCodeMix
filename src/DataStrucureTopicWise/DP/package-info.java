@@ -5,7 +5,7 @@
  * @author rajat
  *
  */
-package DP;
+package DataStrucureTopicWise.DP;
 
 // Question needs to solve
 //https://www.geeksforgeeks.org/count-distinct-occurrences-as-a-subsequence/

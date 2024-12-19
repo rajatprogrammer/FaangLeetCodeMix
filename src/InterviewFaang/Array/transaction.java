@@ -1,4 +1,4 @@
-package Array;
+package InterviewFaang.Array;
 //https://leetcode.com/discuss/interview-question/381157/Google-or-Onsite-or-Min-Transactions
 
 /*Given an int array banks, where banks[i] represents a balance of the i-th bank, and an int target. Find minimum number of transactions to make all balances equal or greater than target.

@@ -1,4 +1,4 @@
-package math;
+package DataStrucureTopicWise.math;
 
 import java.util.ArrayList;
 import java.util.HashSet;

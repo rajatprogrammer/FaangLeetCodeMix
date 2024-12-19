@@ -1,4 +1,4 @@
-package Subarray;
+package DataStrucureTopicWise.Subarray;
 //https://leetcode.com/problems/maximum-length-of-repeated-subarray/
 public class repeatedSubarray {
 

@@ -1,4 +1,4 @@
-package Tree;
+package DataStrucureTopicWise.Tree;
 //https://leetcode.com/problems/kth-ancestor-of-a-tree-node/
 //https://iq.opengenus.org/binary-lifting-k-th-ancestor-lowest-common-ancestor/
 public class k_ancestor {

@@ -1,4 +1,4 @@
-package Subarray;
+package InterviewFaang.Subarray;
 
 import java.util.HashMap;
 //https://www.geeksforgeeks.org/longest-sub-array-sum-k/

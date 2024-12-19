@@ -1,4 +1,4 @@
-package Subarray;
+package DataStrucureTopicWise.Subarray;
 //https://www.geeksforgeeks.org/minimum-length-subarray-sum-greater-given-value/
 //https://leetcode.com/problems/minimum-size-subarray-sum/
 public class SizeSubarray {

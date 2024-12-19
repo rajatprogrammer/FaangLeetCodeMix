@@ -5,4 +5,4 @@
  * @author rajat
  *
  */
-package Graph;
+package DataStrucureTopicWise.Graph;

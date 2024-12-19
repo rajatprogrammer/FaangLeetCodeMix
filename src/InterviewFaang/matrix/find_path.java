@@ -1,4 +1,4 @@
-package matrix;
+package InterviewFaang.matrix;
 
 import java.util.LinkedList;
 import java.util.Queue;

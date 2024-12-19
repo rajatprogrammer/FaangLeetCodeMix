@@ -1,4 +1,4 @@
-package Subarray;
+package InterviewFaang.Subarray;
 import java.util.HashMap;
 import java.util.Map;
 

@@ -1,4 +1,4 @@
-package Sorting;
+package DataStrucureTopicWise.Sorting;
 
 import java.util.Arrays;
 

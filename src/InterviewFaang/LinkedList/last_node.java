@@ -1,4 +1,4 @@
-package LinkedList;
+package InterviewFaang.LinkedList;
 //https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/
 //vmware
 //using 2 ware

@@ -1,4 +1,4 @@
-package DFS;
+package InterviewFaang.DFS;
 import java.util.Arrays;
 //https://practice.geeksforgeeks.org/problems/replace-os-with-xs/0
 public class surrounding_region {

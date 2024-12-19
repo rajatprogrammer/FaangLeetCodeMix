@@ -1,4 +1,4 @@
-package Recusrsion;
+package InterviewFaang.Recusrsion;
 // https://leetcode.com/problems/numbers-with-same-consecutive-differences/
 
 import java.util.ArrayList;

@@ -41,7 +41,7 @@ public class MaximCOntinuosK {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int nums[] = {1,10,100,1000};
+		int nums[] = {1,2,4,7};
 		System.out.println(minOperations(nums));
 	}
 	

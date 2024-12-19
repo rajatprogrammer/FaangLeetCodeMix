@@ -1,4 +1,4 @@
-package Median;
+package DataStrucureTopicWise.Median;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -6,6 +6,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Queue;
 //https://leetcode.com/problems/sliding-window-median/
+//https://www.baeldung.com/java-stream-integers-median-using-heap
 public class median_stream {		
 
 	public static void main(String[] args) {

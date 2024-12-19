@@ -1,4 +1,4 @@
-package Tree;
+package DataStrucureTopicWise.Tree;
 //https://leetcode.com/problems/unique-binary-search-trees/ (Amazon)
 //https://www.geeksforgeeks.org/construct-all-possible-bsts-for-keys-1-to-n/
 //https://www.geeksforgeeks.org/program-nth-catalan-number/
