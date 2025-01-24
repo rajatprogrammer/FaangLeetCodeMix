@@ -58,7 +58,7 @@ public class buy_sell_profit {
         // 0 - buy, 1 - cool down , 2 - SELL
         // 
         dp = new int[n][3];
-    
+        
         dp[0][0] = -a[0];
         dp[0][1] = 0;
         dp[0][2] = 0;

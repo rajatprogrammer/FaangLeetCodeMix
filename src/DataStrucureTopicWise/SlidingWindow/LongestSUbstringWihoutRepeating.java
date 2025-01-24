@@ -7,8 +7,7 @@ public class LongestSUbstringWihoutRepeating {
 		System.out.println(lengthOfLongestSubstring("abcabcbb"));
 	}
 	 public static int lengthOfLongestSubstring(String s) {
-		 int[] chars = new int[128];
-
+		 	int[] chars = new int[128];
 	        int left = 0;
 	        int right = 0;
 

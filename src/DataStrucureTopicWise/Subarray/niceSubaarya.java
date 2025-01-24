@@ -17,7 +17,7 @@ public class niceSubaarya {
 		Map<Integer,Integer> countMap = new HashMap<>();
 		    
 		  int oddsum= 0;
-		    int count =0;
+		  int count =0;
 		    
 		    for(int i=0;i< nums.length;i++)
 		    {
@@ -35,9 +35,8 @@ public class niceSubaarya {
 		            countMap.put(oddsum , 1);
 		        
 		        else
-		        {
+		        	{
 		            countMap.put(oddsum , countMap.get(oddsum)+1);
-
 		          }
 		        
 		    }

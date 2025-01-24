@@ -44,7 +44,6 @@ public class continuosArray {
 	    public static int binarySearch(int[] newNums, int target) {
 	        int left = 0;
 	        int right = newNums.length;
-	        
 	        while (left < right) {
 	            int mid = (left + right) / 2;
 	            if (target < newNums[mid]) {
@@ -53,7 +52,6 @@ public class continuosArray {
 	                left = mid + 1;
 	            }
 	        }
-	        
 	        return left;
 	    }
 

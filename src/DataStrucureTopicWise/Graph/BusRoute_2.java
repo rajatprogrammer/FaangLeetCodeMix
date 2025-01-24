@@ -80,7 +80,7 @@ public class BusRoute_2 {
 		System.out.println(ob1.minimumBusChange(mat, 1,3));
 
 	}
-	/*Time complexity:- O[m*n];
+	/*Time complexity:- O[m*n*k];
 	 * */
 	
 

@@ -34,7 +34,9 @@ public class common_element {
              // If x = y and y = z, print any of them and move ahead 
              // in all arrays 
              if (ar1[i] == ar2[j] && ar2[j] == ar3[k]) 
-             {   System.out.print(ar1[i]+" ");   i++; j++; k++; } 
+             {   System.out.print(ar1[i]+" ");   
+             	i++; j++; k++; 
+             } 
   
              // x < y 
              else if (ar1[i] < ar2[j]) 

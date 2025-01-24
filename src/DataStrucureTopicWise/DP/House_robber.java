@@ -9,7 +9,24 @@ public class House_robber {
 		System.out.println(rob(arr));
 		
 	}
-	public static int rob(int[] nums) {
+	
+	// Recursive function to solve the problem
+    public static int rob(int[] nums, int currentIndex) {
+        // Base case: If we are beyond the last house, return 0
+        if (currentIndex >= nums.length) {
+            return 0;
+        }
+
+        // Option 1: Rob the current house and move to the next non-adjacent house
+        int robCurrent = nums[currentIndex] + rob(nums, currentIndex + 2);
+
+        // Option 2: Skip the current house and move to the next house
+        int skipCurrent = rob(nums, currentIndex + 1);
+
+        // Return the maximum of both options
+        return Math.max(robCurrent, skipCurrent);
+    }
+	         public static int rob(int[] nums) {
 		      if(nums.length == 1) return nums[0];
 		      int dp[] = new int[nums.length];
 		       dp[0] = nums[0];

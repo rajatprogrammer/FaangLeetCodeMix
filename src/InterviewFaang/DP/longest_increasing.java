@@ -13,34 +13,25 @@ public class longest_increasing {
                   + LIS(arr,0,arr.length,Integer.MIN_VALUE));
 	}
 	
-	public static int lengthOfLIS(int[] A) {
-        if(A.length<=0){
-            return 0;
-        }
-      int[] L = new int[A.length];
- 
-        // longest increasing sub-sequence ending with A[0] has length 1
-        L[0] = 1;
- 
-        // start from second element in the array
-        for (int i = 1; i < A.length; i++)
-        {
-            // do for each element in sub-array A[0..i-1]
-            for (int j = 0; j < i; j++)
-            {
-                // find longest increasing sub-sequence that ends with A[j]
-                // where A[j] is less than the current element A[i]
-                if (A[j] < A[i] && L[j] > L[i]) {
-                    L[i] = L[j];
-                }
-            }
-            // include A[i] in LIS
-            L[i]++;
-        }
- 
-        // return longest increasing sub-sequence (having maximum length)
-        return Arrays.stream(L).max().getAsInt();
-    }
+	 public static int lengthOfLIS(int[] nums) {
+	        int[] dp = new int[nums.length];
+	        Arrays.fill(dp, 1);
+	        
+	        for (int i = 1; i < nums.length; i++) {
+	            for (int j = 0; j < i; j++) {
+	                if (nums[i] > nums[j]) {
+	                    dp[i] = Math.max(dp[i], dp[j] + 1);
+	                }
+	            }
+	        }
+	        
+	        int longest = 0;
+	        for (int c: dp) {
+	            longest = Math.max(longest, c);
+	        }
+	        
+	        return longest;
+	    }
 	
 	public static  int LIS(int[] A, int i, int n, int prev)
     {

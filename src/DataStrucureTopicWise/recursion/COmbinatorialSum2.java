@@ -27,6 +27,6 @@ public class COmbinatorialSum2 {
             combinations(i + 1, n - i, k, list, result);
             list.removeLast(); 
         }
-	    }
+	  }
 
 }

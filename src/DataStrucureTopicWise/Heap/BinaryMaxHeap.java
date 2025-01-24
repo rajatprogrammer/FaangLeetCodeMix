@@ -59,15 +59,12 @@ public class BinaryMaxHeap {
 		int left = leftChild(i);
 		int right = rightChild(i);
 		int largest = i;
-
 		if (left < heap.size() && heap.get(left) > heap.get(largest)) {
 			largest = left;
 		}
-
 		if (right < heap.size() && heap.get(right) > heap.get(largest)) {
 			largest = right;
 		}
-
 		if (largest != i) {
 			swap(i, largest);
 			heapify(largest);

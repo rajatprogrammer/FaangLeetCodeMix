@@ -34,12 +34,10 @@ public class zigZagtraversal {
 	            int s=q.size();
 	            for(int i=0 ; i<s ; ++i){
 	                TreeNode temp=q.poll();
-	                
 	                if(left==true)
 	                    level.add(temp.val);       //FIFO normal order
 	                else
-	                    level.add(0, temp.val);    //Reverse order by adding element to front of list.
-	                
+	                    level.add(0, temp.val);    //Reverse order by adding element to front of list.	                
 	                if(temp.left!=null)
 	                    q.offer(temp.left);
 	                if(temp.right!=null)

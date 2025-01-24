@@ -32,11 +32,9 @@ public class NMeeting {
 			ob[i] = new meet(start[i], end[i], i);
 		}
 		Arrays.sort(ob, new Comparator<meet>() {
-			@Override
 			public int compare(meet o1, meet o2) {
 				return o1.end - o2.end;
 			}
-			
 		});
 		
 		int count =1;

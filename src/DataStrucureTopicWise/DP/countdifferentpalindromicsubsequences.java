@@ -29,6 +29,7 @@ public class countdifferentpalindromicsubsequences {
 	                    while (low <= high && s.charAt(low) != s.charAt(i)) {
 	                        low++;
 	                    }
+	                    
 	                    while (low <= high && s.charAt(high) != s.charAt(i)) {
 	                        high--;
 	                    }

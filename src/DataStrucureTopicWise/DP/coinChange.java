@@ -30,7 +30,6 @@ public class coinChange {
 			dp[i][amount] = coinChange(coins,i,amount-coins[i],dp) + coinChange(coins,i+1,amount,dp);
 		}
 		return amount;
-		
 	}
 	
 	public static int changeCheck(int amount, int[] coins) {
@@ -46,5 +45,20 @@ public class coinChange {
 
         return dp[amount] <= Integer.MAX_VALUE ? (int) dp[amount] : -1; // Return -1 if result exceeds int limit
     }
+	
+	public int coinChange(int[] coins, int amount) {
+	    int max = amount + 1;
+	    int[] dp = new int[amount + 1];
+	    Arrays.fill(dp, max);
+	    dp[0] = 0;
+	    for (int i = 1; i <= amount; i++) {
+	      for (int j = 0; j < coins.length; j++) {
+	        if (coins[j] <= i) {
+	          dp[i] = Math.min(dp[i], dp[i - coins[j]] + 1);
+	        }
+	      }
+	    }
+	    return dp[amount] > amount ? -1 : dp[amount];
+	  }
 
 }

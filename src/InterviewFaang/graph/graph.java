@@ -1,5 +1,5 @@
 
-package graph;
+package InterviewFaang.graph;
 // A Java program to print topological sorting of a DAG  
 //https://www.geeksforgeeks.org/topological-sorting/
 import java.io.*;  

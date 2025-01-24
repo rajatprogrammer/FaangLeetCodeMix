@@ -23,7 +23,8 @@ public class stringConvert {
 	}
 	public static boolean closeStrings(String word1, String word2) {
 		// count the English letters
-        int[] arr1 = new int[N], arr2 = new int[N];
+        int[] arr1 = new int[N], 
+        arr2 = new int[N];
         for (char ch : word1.toCharArray())
             arr1[ch - 'a']++;
         for (char ch : word2.toCharArray())

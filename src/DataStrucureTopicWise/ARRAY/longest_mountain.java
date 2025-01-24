@@ -17,6 +17,7 @@ public class longest_mountain {
 		 int max = 0;
 	     for(int i = 1; i < arr.length-1; i++) {
 	            if(arr[i-1] < arr[i] && arr[i] > arr[i+1]) {
+	            	
 	                int left = i-1;
 	                int right = i+1;
 	                

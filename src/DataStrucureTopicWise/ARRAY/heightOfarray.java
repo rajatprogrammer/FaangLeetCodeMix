@@ -60,6 +60,7 @@ public class heightOfarray {
         for(int[] person: people){
             res.add(person[1], person);
         }
+        
         return res.toArray(new int[people.length][2]);
     }
 

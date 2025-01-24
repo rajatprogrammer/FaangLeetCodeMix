@@ -1,4 +1,4 @@
-package Tree;
+package DataStrucureTopicWise.Tree;
 
 public class binarysequence {
 //https://www.geeksforgeeks.org/longest-consecutive-sequence-binary-tree/

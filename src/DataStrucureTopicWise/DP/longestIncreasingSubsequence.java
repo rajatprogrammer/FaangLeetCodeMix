@@ -51,6 +51,7 @@ public class longestIncreasingSubsequence {
 		// case 2: include the current element if it is greater
 		// than previous element in LIS
 		int incl = 0;
+		
 		if (A[i] > prev) {
 			incl = 1 + recursive(A, i + 1, n, A[i]);
 		}

@@ -11,7 +11,7 @@ public class LongValidParanthesis {
 	}
 	
 	public int longestValidParentheses(String name) {
-	       Stack<Integer> stk = new Stack<Integer>();
+	        Stack<Integer> stk = new Stack<Integer>();
 			stk.push(-1);
 			int count=0;
 			for(int i=0;i<name.length();i++) {

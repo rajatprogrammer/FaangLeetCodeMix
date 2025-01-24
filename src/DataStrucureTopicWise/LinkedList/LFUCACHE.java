@@ -24,7 +24,7 @@ public class LFUCACHE {
 
 	}
  
-	void insert(int key, int frequency, int value) {
+		void insert(int key, int frequency, int value) {
 	        cache.put(key, new Pair<>(frequency, value));
 	        frequencies.putIfAbsent(frequency, new LinkedHashSet<>());
 	        frequencies.get(frequency).add(key);

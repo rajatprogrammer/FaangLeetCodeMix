@@ -2,7 +2,7 @@ package DataStrucureTopicWise.Tree;
 
 import DataStrucureTopicWise.Tree.BalancedTree.TreeNode;
 
-/*iven the root of a binary tree, return the length of the longest consecutive sequence path.
+/*Given the root of a binary tree, return the length of the longest consecutive sequence path.
 
 A consecutive sequence path is a path where the values increase by one along the path.
 

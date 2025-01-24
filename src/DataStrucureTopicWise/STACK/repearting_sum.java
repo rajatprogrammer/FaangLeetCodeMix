@@ -24,7 +24,9 @@ public class repearting_sum {
 	                else {
 	                    res+=cost[i];
 	                }
-	            } else{ stack.push(i);}
+	            } else{ 
+	            	stack.push(i);
+	            }
 	        }
 	        return res;
 	    }

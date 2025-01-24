@@ -1,4 +1,4 @@
-package String;
+package DataStrucureTopicWise.String;
 //https://leetcode.com/problems/shifting-letters/
 public class shift_char {
 

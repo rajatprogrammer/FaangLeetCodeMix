@@ -11,7 +11,6 @@ public class stack {
 	      int count=0;
 	      int max=0;
 	      for(int i=0;i<name.length();i++){
-	       //  System.out.println("hello" +count );
 	         if(name.charAt(i)=='('){
 	            s.push('(');
 	         }

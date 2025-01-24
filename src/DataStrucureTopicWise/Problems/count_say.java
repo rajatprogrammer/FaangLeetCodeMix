@@ -4,31 +4,26 @@ public class count_say {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n =6;
-		String s="11";
-		for(int i=2;i<n;i++) {
-			int count =1;
-			String t_count="";
-			for(int j=1;j<=s.length();j++) {
-				if(j==s.length()) {
-					t_count = t_count + count + s.charAt(j-1);
-					continue;
-				}
-				if(s.charAt(j-1)==s.charAt(j)) {
-					count ++ ;
-				}
-				else {
-					t_count = t_count + count + s.charAt(j-1);
-					count=1;
-				}
-			}
-			if(t_count=="") {
-				s= ""+count+s.charAt(s.length()-1);
-			}else {
-				s= t_count;
-			}
-		}
-		System.out.print(s);
 	}
+	public String countAndSay(int n) {
+	       String str = "1"; 
+	        for (int j = 1; j < n; j++) {  
+	            int i = 0;
+	            int count = 1; 
+	            StringBuilder temp = new StringBuilder();
+	            while (i < str.length() - 1) {
+	                if (str.charAt(i) == str.charAt(i + 1)) {
+	                    count++;  
+	                } else {
+	                    temp.append(count).append(str.charAt(i));  
+	                    count = 1; 
+	                }
+	                i++;
+	            }
+	            temp.append(count).append(str.charAt(i)); 
+	            str = temp.toString();
+	        }
+	        return str;
+	    }
 
 }

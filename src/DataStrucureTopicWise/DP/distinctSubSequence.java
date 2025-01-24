@@ -2,6 +2,7 @@ package DataStrucureTopicWise.DP;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 //https://leetcode.com/problems/distinct-subsequences-ii/submissions/
 public class distinctSubSequence {
 
@@ -27,5 +28,28 @@ public class distinctSubSequence {
 		}
       return total;  
     }
+	
+	public static int distinctSubseqIIRecursive(String s) {
+	        HashSet<String> resultSet = new HashSet<>();
+	        generateSubsequences(s, 0, "", resultSet);
+	        return resultSet.size();
+	    }
+
+	      private static void generateSubsequences(String s, int index, String current, HashSet<String> resultSet) {
+	        if (index == s.length()) {
+	            if (!current.isEmpty()) {
+	                resultSet.add(current); // Add the subsequence to the set
+	            }
+	            return;
+	        }
+
+	        // Include the current character
+	        generateSubsequences(s, index + 1, current + s.charAt(index), resultSet);
+
+	        // Exclude the current character
+	        generateSubsequences(s, index + 1, current, resultSet);
+	    }
+	
+	
 
 }

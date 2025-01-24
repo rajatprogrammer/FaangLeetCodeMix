@@ -85,8 +85,7 @@ public class MaximCOntinuosK {
 	            } else {
 	                left = mid + 1;
 	            }
-	        }
-	        
+	        }  
 	        return left;
 	    }
 

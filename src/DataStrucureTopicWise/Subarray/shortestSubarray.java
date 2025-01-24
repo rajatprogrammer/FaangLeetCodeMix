@@ -31,11 +31,13 @@ public class shortestSubarray {
 			while (!dq.isEmpty() && sums[dq.getLast()] > sum) {
 				dq.removeLast();
 			}
+			
 			while (!dq.isEmpty() && sums[dq.getFirst()] + K <= sum) {
 				ans = Math.min(ans, i - dq.removeFirst());
 			}
 			dq.add(i);
 		}
+		
 		return (int) ans==Integer.MAX_VALUE?-1:(int) ans;
 
 	}

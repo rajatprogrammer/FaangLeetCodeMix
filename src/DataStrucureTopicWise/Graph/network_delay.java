@@ -12,6 +12,7 @@ public class network_delay {
 		network_delay ob1 = new network_delay();
 		int times[][] = {{2,1,1},{2,3,1},{3,4,1}};
 		System.out.println(ob1.networkDelayTime(times,4,2));
+		System.out.println(ob1.networkDelayTimeRep(times,4,2));
 	}
 	public int networkDelayTime(int[][] times, int N, int k) {
         boolean visit[][]=new boolean[N+1][N+1];
@@ -31,7 +32,6 @@ public class network_delay {
         while(pq.size()!=0){
             int pair[]=pq.poll();
             int v=pair[0],w=pair[1];
-            
             List<Integer>childs=adjecent[v];
             for(int c:childs){
                 if(w+weight[v][c]<cost[c]){
@@ -47,5 +47,42 @@ public class network_delay {
         }
         return res;
     }
+	
+	public int networkDelayTimeRep(int[][] times, int N, int k) {
+		    LinkedList<Integer>[] adj = new LinkedList[N+1]; 
+	        int weight[][]=new int[N+1][N+1];
+	        for(int i=0;i<=N;i++){
+	            adj[i] = new LinkedList<>();
+	        }
+	        int cost[]=new int[N+1];
+	        Arrays.fill(cost,Integer.MAX_VALUE);
+	        for(int itr[]:times){
+	            adj[itr[0]].add(itr[1]);
+	            weight[itr[0]][itr[1]] = itr[2];
+	        }
+	        Queue<int[]> q = new LinkedList<>();
+	        q.add(new int[]{k,0});
+	        cost[k]=0;
+	        while(!q.isEmpty()){
+	            int pair[] = q.poll();
+	            int v=pair[0];
+	            int w=pair[1];
+	            for(int c:adj[v]){
+	                if(w+weight[v][c]<cost[c]){
+	                    q.add(new int[]{c,weight[v][c]});
+	                    cost[c]=Math.min(cost[c],w+weight[v][c]);
+	                }
+	            }
+	        }
+	        int max = Integer.MIN_VALUE;
+	        for(int i=1;i<cost.length;i++){
+	            if(cost[i] == Integer.MAX_VALUE){
+	                return -1;
+	            }else{
+	                 max=Math.max(max,cost[i]);
+	            }
+	        }
+	        return max;
+	}
 
 }

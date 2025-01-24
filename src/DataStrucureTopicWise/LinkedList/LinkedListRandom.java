@@ -84,8 +84,6 @@ public class LinkedListRandom {
 	copy.next=null;
 
 	return copyHead;
-
-
 	    }
 
 }
