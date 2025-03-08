@@ -11,7 +11,11 @@ public class GenerateAllSubsequence {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		List<String> rat = findSubsequences("RAJAT");
+		
+		for(String x : rat) {
+			System.out.println(x);
+		}
 	}
 	
 	public static List<String> findSubsequences(String str) {

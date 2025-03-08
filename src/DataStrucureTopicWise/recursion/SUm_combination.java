@@ -40,7 +40,6 @@ public class SUm_combination {
     public static List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> results = new ArrayList<List<Integer>>();
         LinkedList<Integer> comb = new LinkedList<Integer>();
-
         backtrack(target, comb, 0, candidates, results);
         return results;
     }

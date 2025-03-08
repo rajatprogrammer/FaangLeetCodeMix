@@ -3,8 +3,6 @@ package DataStrucureTopicWise.DP;
 public class longestSubstring {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		//System.out.println(recursive("OldSite:GeeksforGeeks.org","NewSite:GeeksQuiz.com",0,0,0));
 		System.out.println(DPlongestSubstring("OldSite:GeeksforGeeks.org","NewSite:GeeksQuiz.com"));
 	}
 	
@@ -38,6 +36,4 @@ public class longestSubstring {
 			return Math.max(count, Math.max(recursive(s1,s2,l1+1,l2,count),recursive(s1,s2,l1,l2+1,count)));
 		}
 	}
-	
-
 }

@@ -18,6 +18,7 @@ public class countSubsetSum {
                 }
             }
         }
+        
         for(int i=1;i<dp.length;i++) {
             for(int j=1;j<dp[0].length;j++) {
                 if(nums[i-1]==0) {
@@ -35,6 +36,25 @@ public class countSubsetSum {
         }
         return dp[nums.length][S];
     }
+	
+	
+	 public static int countSubsets(int[] arr, int n, int sum) {
+	        // Base Cases
+	        if (sum == 0) {
+	            return 1;
+	        }
+	        if (n == 0) {
+	            return 0;
+	        }
+	        
+	        // If the last element is greater than the sum, ignore it
+	        if (arr[n - 1] > sum) {
+	            return countSubsets(arr, n - 1, sum);
+	        }
+	        
+	        // Either include the last element or exclude it
+	        return countSubsets(arr, n - 1, sum) + countSubsets(arr, n - 1, sum - arr[n - 1]);
+	    }
 
 
 

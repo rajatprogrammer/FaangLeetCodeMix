@@ -6,10 +6,6 @@ import java.util.List;
 /*
  * https://leetcode.com/problems/letter-case-permutation/description/
  * 784. Letter Case Permutation
-Solved
-Medium
-Topics
-Companies
 Given a string s, you can transform every letter individually to be lowercase or uppercase to create another string.
 
 Return a list of all possible strings we could create. Return the output in any order.
@@ -31,7 +27,9 @@ public class paranthesisCOmbo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		String x = "a1b2";
+		paranthesisCOmbo ob1  = new paranthesisCOmbo();
+		System.out.println(ob1.letterCasePermutation(x));
 	}
 	
 	public List<String> letterCasePermutation(String s) {

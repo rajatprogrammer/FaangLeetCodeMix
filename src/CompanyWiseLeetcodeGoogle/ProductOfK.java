@@ -1,4 +1,8 @@
 package CompanyWiseLeetcodeGoogle;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /*
  * https://leetcode.com/problems/product-of-the-last-k-numbers
  * Design an algorithm that accepts a stream of integers and retrieves the product of the last k integers of the stream.
@@ -39,10 +43,41 @@ productOfNumbers.getProduct(2); // return 32. The product of the last 2 numbers 
  * 
  * */
 public class ProductOfK {
+	
+	 List<Integer> prefix;
+	 boolean Z;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 	}
+	
+	public ProductOfNumbers() {
+        //stream = new ArrayList<>();
+        Z = false;
+        prefix = new ArrayList<>();
+        prefix.add(1);
+    }
+    
+    public void add(int num) {
+        if(num == 0){
+            Z = true;
+            prefix = new ArrayList<>();
+            prefix.add(1);
+        }
+
+        else{
+            prefix.add(num*prefix.get(prefix.size()-1));
+        }
+    }
+    
+   public int getProduct(int k) {
+        //System.out.println(prefix);
+        if(k >= prefix.size()){
+            return 0;
+        }
+        return prefix.get(prefix.size()-1)/prefix.get(prefix.size()-k-1);
+    }
+
 
 }

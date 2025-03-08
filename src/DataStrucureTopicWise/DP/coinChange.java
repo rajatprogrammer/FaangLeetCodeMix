@@ -18,7 +18,8 @@ public class coinChange {
 		System.out.print(changeCheck(amount,coins));
 	}
 	
-	static int  coinChange(int[]coins,int i,int amount,Integer dp[][]) {
+	static int coinChange(int[]coins,int i,int amount,Integer dp[][]) {
+		
 		if(amount==0) {
 			return 1;
 		}else if(amount<0 || coins.length<=i) {
@@ -29,6 +30,7 @@ public class coinChange {
 		else {
 			dp[i][amount] = coinChange(coins,i,amount-coins[i],dp) + coinChange(coins,i+1,amount,dp);
 		}
+		
 		return amount;
 	}
 	

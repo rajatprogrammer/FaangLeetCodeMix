@@ -2,6 +2,7 @@ package DataStrucureTopicWise.ARRAY;
 
 import java.util.Arrays;
 
+//https://leetcode.com/problems/smallest-range-ii/description/
 //https://leetcode.com/problems/smallest-range-ii/description/?envType=company&envId=adobe&favoriteSlug=adobe-six-months
 public class SmallesArray {
 

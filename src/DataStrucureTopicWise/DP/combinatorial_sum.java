@@ -15,7 +15,7 @@ public class combinatorial_sum {
 	}
 	
 	 public int combinationSum4(int[] nums, int target) {
-		  dp = new int [target + 1];
+		    dp = new int [target + 1];
 	        Arrays.fill (dp, -1);
 	        return Solve (nums, target);
 	 }

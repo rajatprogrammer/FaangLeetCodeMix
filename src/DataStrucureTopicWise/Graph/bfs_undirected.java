@@ -1,7 +1,6 @@
 package DataStrucureTopicWise.Graph;
 
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 public class bfs_undirected {

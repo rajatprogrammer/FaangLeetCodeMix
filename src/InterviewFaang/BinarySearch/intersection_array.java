@@ -24,7 +24,7 @@ public class intersection_array {
 		System.out.print(Arrays.toString(intersect(num1,num2)));
 	}
 	public static int[] intersect(int[] nums1, int[] nums2) {
-		 List<Integer> res = new ArrayList<>();
+		    List<Integer> res = new ArrayList<>();
 	        Arrays.sort(nums1);
 	        Arrays.sort(nums2);
 	        for (int i = 0, j = 0; i < nums1.length && j < nums2.length; ) {

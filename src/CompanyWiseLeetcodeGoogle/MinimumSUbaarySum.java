@@ -56,7 +56,6 @@ public class MinimumSUbaarySum {
         for(int i=0;i<arr.length;i++)
         {
              sum = (sum + (long) left[i] * right[i] * arr[i]) % mod;
-
         }
         return (int)sum;
         

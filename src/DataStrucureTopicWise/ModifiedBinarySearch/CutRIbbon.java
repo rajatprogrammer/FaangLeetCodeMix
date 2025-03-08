@@ -61,8 +61,7 @@ public class CutRIbbon {
         
         int n = ribbons.length, low = 1, high = max, mid, count;        
         while(low <= high) {
-            mid = low + (high - low)/2;
-            
+            mid = low + (high - low)/2; 
             count = 0;
             for(int length : ribbons)
                 count += length/mid;

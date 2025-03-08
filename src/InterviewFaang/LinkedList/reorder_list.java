@@ -59,7 +59,7 @@ public class reorder_list {
 	    }
 	 public ListNode reverse(ListNode head){
 		 ListNode next=head.next;
-		 ListNode ptr= head;
+		 ListNode ptr=head;
 		 ListNode prev=null;
 		 while(ptr!=null) {
 			 next=ptr.next;

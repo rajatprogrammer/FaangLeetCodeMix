@@ -1,8 +1,5 @@
 package CompanyWiseLeetcode.sailsforce;
-
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 
 /*
  * 
@@ -16,9 +13,9 @@ public class SailsForce_Rajat_interview {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String input = "??8???";
-		int day_hour = 8;
-	    int workHour = 48;
+		String input = "08??840";
+		int day_hour = 4;
+	    int workHour = 24;
 		System.out.print(sequence(input,workHour,day_hour));
 	}
 
@@ -34,13 +31,20 @@ public class SailsForce_Rajat_interview {
 		}
 		int diff = workHour - curSUm;
 		HashSet<String> vp = new HashSet<>();
-		return recurs(vp,input,remQue,diff,dayHour,workHour,0,curSUm);
+		return recurs(vp,input,remQue,diff,dayHour,workHour,0);
 	}
 
 	public static HashSet<String> recurs(HashSet<String> val, String temp, int remQues, int diff, int dayHour,
-			int totalSum, int len,int curSUm) {
-		if (remQues == 0 && curSUm == totalSum) {
-			val.add(temp.toString());
+			int totalSum, int len) {
+		if (remQues == 0) {
+			int sum = 0;
+			String valFinal = temp.toString();
+			for (int i = 0; i < valFinal.length(); i++) {
+				sum = sum + valFinal.charAt(i) - '0';
+			}
+			if (sum == totalSum) {
+				val.add(temp.toString());
+			}
 			return val;
 		} else {
 			for (int j = len; j < temp.length(); j++) {
@@ -48,14 +52,9 @@ public class SailsForce_Rajat_interview {
 					for (int i = 0; i <= dayHour; i++) {
 						remQues--;
 						temp = temp.substring(0,j) + i + temp.substring(j+1);
-						if(!val.contains(temp)) {
-							recurs(val,temp,remQues,diff,dayHour,totalSum,len+1,curSUm+i);
-							remQues++;
-							temp = temp.substring(0,j) + '?' + temp.substring(j+1);
-						}else {
-							continue;
-						}
-						
+						recurs(val,temp,remQues,diff,dayHour,totalSum,len+1);
+						remQues++;
+						temp = temp.substring(0,j) + '?' + temp.substring(j+1);
 					}
 				}
 			}

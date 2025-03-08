@@ -49,7 +49,7 @@ public class median_sliding {
 								 * nums[i] will be max in future windows
 								 */
 
-			q.add(i);// Since above conditions removed unwanted candidates...add current index
+			q.add(i); // Since above conditions removed unwanted candidates...add current index
 
 			if (i >= k - 1) {// Consider window after first element only
 				res[j++] = nums[q.peek()];

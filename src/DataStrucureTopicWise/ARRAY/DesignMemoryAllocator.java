@@ -10,6 +10,7 @@ public class DesignMemoryAllocator {
 		// TODO Auto-generated method stub
 
 	}
+	
     public DesignMemoryAllocator(int n) {
        array = new int[n];
         for (int i = 0; i < array.length; i++) {

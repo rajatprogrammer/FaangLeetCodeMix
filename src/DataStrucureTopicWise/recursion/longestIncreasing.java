@@ -1,4 +1,4 @@
-package recursion;
+package DataStrucureTopicWise.recursion;
 //https://leetcode.com/problems/longest-increasing-path-in-a-matrix/
 public class longestIncreasing {
 

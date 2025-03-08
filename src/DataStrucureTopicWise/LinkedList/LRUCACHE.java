@@ -1,86 +1,85 @@
 package DataStrucureTopicWise.LinkedList;
 
 import java.util.HashMap;
+import java.util.Map;
 //
 public class LRUCACHE {
-	 class Node
-    {
-        int value;
-        Node prev;
-        Node next;
-        Node(int prop){
-            this.value = prop;
-            this.next = null;
-            this.prev = null;
-        }
-    }
-	   int totalCap = 0;
-	    HashMap<Integer,Node> hs = new HashMap<>();
-	    Node head = null;
-	    Node last = null;
-	    Node ptr = null;
-	public LRUCACHE(int i) {
-			this.totalCap  = i;
-	}
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		LRUCACHE ob1 = new LRUCACHE(2);
-		ob1.put(1, 0);
-		ob1.put(2,2);
-		System.out.print(ob1.get(1));
-		ob1.put(3,3);
-		System.out.print(ob1.get(2));
-		ob1.put(4,4);
-		System.out.print(ob1.get(1));
-		System.out.print(ob1.get(3));
-		System.out.print(ob1.get(4));
-	}
-	public int get(int key) {
-        if(hs.containsKey(key)){
-            Node temp = hs.get(key);
-            if(temp.prev!=null && temp.next!=null){
-                temp.next.prev = temp.prev;
-                temp.prev.next = temp.next;
-            }
-            else if(temp.prev!=null  && temp.next==null){
-                last =  temp.prev;
-                temp.prev = null;
-                head.prev = temp;
-                temp.next = head;
-                head = temp;
-            }
-            return temp.value;
-        }else{
-            return -1;
-        }
-    }
-	public void put(int key, int value) {
-        if(hs.size()>=totalCap){
-        	hs.remove(last.value);
-            last = last.prev;
-            last.next = null;
-            Node node = new Node(value);
-            head.prev = node;
-            node.next = head;
-            head = node;
-            hs.put(key,node);
-        }else{
-            if(head==null){
-                Node node = new Node(value);
-                hs.put(key,node);
-                head=node;
-                last=node;
-                ptr = node;
-            }else{
-                Node node = new Node(value);
-                head.prev = node;
-                node.next = head;
-                last = head;
-                head = node;
-                last.prev = node;
-                hs.put(key,node);
-            }
-        }
-    } 
+	 private static class Node {
+	        int key, value;
+	        Node prev, next;
+	        
+	        Node(int key, int value) {
+	            this.key = key;
+	            this.value = value;
+	        }
+	    }
+	    
+	    private final int capacity;
+	    private final Map<Integer, Node> cache;
+	    private final Node head, tail;
+	    
+	    public LRUCACHE(int capacity) {
+	        this.capacity = capacity;
+	        this.cache = new HashMap<>(capacity);
+	        
+	        head = new Node(0, 0);
+	        tail = new Node(0, 0);
+	        head.next = tail;
+	        tail.prev = head;
+	    }
+	    
+	    private void remove(Node node) {
+	        node.prev.next = node.next;
+	        node.next.prev = node.prev;
+	    }
+	    
+	    private void insert(Node node) {
+	        node.next = head.next;
+	        node.prev = head;
+	        head.next.prev = node;
+	        head.next = node;
+	    }
+	    
+	    public int get(int key) {
+	        if (!cache.containsKey(key)) return -1;
+	        Node node = cache.get(key);
+	        remove(node);
+	        insert(node);
+	        return node.value;
+	    }
+	    
+	    public void put(int key, int value) {
+	        if (cache.containsKey(key)) {
+	            remove(cache.get(key));
+	        }
+	        if (cache.size() == capacity) {
+	            cache.remove(tail.prev.key);
+	            remove(tail.prev);
+	        }
+	        Node node = new Node(key, value);
+	        insert(node);
+	        cache.put(key, node);
+	    }
+	    
+	    public void display() {
+	        Node temp = head.next;
+	        while (temp != tail) {
+	            System.out.print(temp.key + "=" + temp.value + " ");
+	            temp = temp.next;
+	        }
+	        System.out.println();
+	    }
+	    
+	    public static void main(String[] args) {
+	    	LRUCACHE lru = new LRUCACHE(3);
+	        lru.put(1, 10);
+	        lru.put(2, 20);
+	        lru.put(3, 30);
+	        lru.display(); // 3=30 2=20 1=10
+	        
+	        lru.get(1); // Accessing 1
+	        lru.put(4, 40); // Evicts 2 (Least Recently Used)
+	        lru.display(); // 4=40 1=10 3=30
+	    }
 }
 

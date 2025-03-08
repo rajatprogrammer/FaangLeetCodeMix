@@ -56,8 +56,11 @@ public class binarysequence {
 
 		// recursively call left and right subtree with 
 		// expected value 1 more than root data 
+		
 		longestConsecutiveUtil(root.left, curlength, root.data + 1, res); 
 		longestConsecutiveUtil(root.right, curlength, root.data + 1, res); 
+		
+		
 	} 
 
 	public static void main(String[] args) {

@@ -34,6 +34,7 @@ public class CoinCHnage {
         }
 
         int minCoins = Integer.MAX_VALUE;
+        
         for(int i = 0; i < coins.length; i++) {
             int ans = coinCount(coins, amount - coins[i]);
 

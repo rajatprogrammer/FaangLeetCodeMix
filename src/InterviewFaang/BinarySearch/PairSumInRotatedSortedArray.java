@@ -62,8 +62,8 @@ public class PairSumInRotatedSortedArray {
 				break;
 			}
 		}
-			int low= (i+1)%len;
-			int high = i;
+		int low=(i+1)%len;
+		int high=i;
 		while(low!=high) {
 			if(arr[low] + arr[high]==sum) {
 				count++;

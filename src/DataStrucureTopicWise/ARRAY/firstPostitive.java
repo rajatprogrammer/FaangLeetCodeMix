@@ -34,7 +34,6 @@ public class firstPostitive {
 	            set.add(i);
 	        }
 	        
-	        
 	        if (min <= 1) {
 	            for (int i = min; ;i++) {
 	                if (i > 0 && !set.contains(i))

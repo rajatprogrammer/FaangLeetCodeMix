@@ -23,5 +23,4 @@ public class rotated_sorted {
 	    }
 	    return -1;
 	}
-
 }

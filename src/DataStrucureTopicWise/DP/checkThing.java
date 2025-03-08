@@ -10,7 +10,6 @@ public class checkThing {
 	
 	 public static int numTeams(int[] rating) {
 	        int n = rating.length;
-
 	        int[][] dp = new int[n][2];
 	        int count = 0;
 

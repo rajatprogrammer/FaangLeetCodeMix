@@ -36,7 +36,7 @@ public class arthimetic_slice {
 	 public static int numberOfArithmeticSlices(int[] A) {
 		 if(A.length<3){
 	            return 0;
-	        }
+	      }
 		 int dpDiff[] = new int[A.length-1];
 		 int count=0;
 		 for(int i=1;i<A.length;i++) {

@@ -110,8 +110,6 @@ public class SimplfyPath {
 	        for(String p:st){
 	            res.append('/').append(p);
 	        }
-
 	        return res.length()>0?res.toString():"/";
-
 	    }
 }

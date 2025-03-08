@@ -28,6 +28,7 @@ public class BoundaryOrderTraversal {
 	public List<Integer> boundaryOfBinaryTree(TreeNode root) {
 	    
 	    List<Integer> res = new ArrayList<Integer>();
+	    
 	    if(root == null)
 	        return res;
 	    
